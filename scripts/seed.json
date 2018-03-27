@@ -1,0 +1,269 @@
+{
+  "posts": [
+    {
+      "published": {
+        "meta": {
+          "category": "investigator",
+          "tags": ["investigator", "cybersecurity", "technology", "computer"],
+          "thumbText": "The Navy Cryptology Community Maintains the state-of-the-art equipment and networks used to generate top secret intel.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": true,
+          "author": "stemjobs",
+          "url": "/posts/2018/cryptologic-technician",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522077921/navy/navy-crypto-tech-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522077921/navy/navy-crypto-tech-sm.jpg",
+          "date": "2018-03-18"
+        },
+        "title": "Cryptologic Technician",
+        "changed": 1516278956458,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522077919/navy/navy-crypto-tech.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522077919/navy/navy-crypto-tech.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nGathering top secret intelligence starts with those who know how to find it – using their intellectual abilities and the latest technology to collect, decipher and translate enemy communications.\n\n\n## Responsibilities include:\n\n  * Collecting, analyzing and reporting on communication signals\n  * Utilizing computers, specialized computer-assisted communications equipment and video display terminals.\n  * Serving as an important part of the Information Dominance Corps in its mission to gain a deep understanding of the inner workings of adversaries and develop unmatched knowledge of the battlespace during wartime\n"
+      },
+      "changed": 1516278956458,
+      "id": "4tsbJgXQyOLW3l4LFZEC",
+      "draft": {
+        "changed": 1516278956458,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522077919/navy/navy-crypto-tech.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522077919/navy/navy-crypto-tech.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nGathering top secret intelligence starts with those who know how to find it – using their intellectual abilities and the latest technology to collect, decipher and translate enemy communications.\n\n\n## Responsibilities include:\n\n  * Collecting, analyzing and reporting on communication signals\n  * Utilizing computers, specialized computer-assisted communications equipment and video display terminals.\n  * Serving as an important part of the Information Dominance Corps in its mission to gain a deep understanding of the inner workings of adversaries and develop unmatched knowledge of the battlespace during wartime\n",
+        "meta": {
+          "category": "investigator",
+          "tags": [],
+          "thumbText": "The Navy Cryptology Community Maintains the state-of-the-art equipment and networks used to generate top secret intel.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/cryptologic-technician",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522077921/navy/navy-crypto-tech-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522077921/navy/navy-crypto-tech-sm.jpg",
+          "date": "2018-01-18"
+        },
+        "title": "Cryptologic Technician"
+      },
+      "status": "published"
+    },
+    {
+      "id": "98oqiBRQbuHTeRRHCHr5",
+      "draft": {
+        "changed": 1516278496975,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522079614/navy/navy-corpsman.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522079614/navy/navy-corpsman.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nGive fellow servicemembers routine, preventive and emergency health care. Help care for their families back home. \nTake part in relief missions, providing aid for hurricane or earthquake victims. Hospital Corpsmen provide top-notch medical and dental assistance to the men and women of America’s Navy.\n Navy Hospital Corpsmen provide treatment for thousands of Sailors and Marines, using quick thinking to help keep them fit and ready to serve at the best of their abilities. \n\nResponsibilities may include:\n\n  * Serve as an operating room technician for general and specialized surgery\n  * Process dental X-rays and operate X-ray equipment\n  * Work in the field with Navy SEALs or Seabees or be assigned to Fleet Marine Force\n  * Construct dental crowns and bridges \n  * Help administer a wide range of preventive care\n  * Deliver emergency medical or dental treatment to Sailors and Marines in the field\n  * Maintain patient treatment records\n  * Perform clinical tests\n\n",
+        "meta": {
+          "thumbText": "Provide top-notch medical and dental assistance to the men and women of America’s Navy.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": true,
+          "author": "stemjobs",
+          "url": "/posts/2018/medical-support",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522079616/navy/navy-corpsman-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522079616/navy/navy-corpsman-sm.jpg",
+          "date": "2018-01-18",
+          "category": "advisor",
+          "tags": ["advisor", "medical", "healthcare"]
+        },
+        "title": "Medical Support Team"
+      },
+      "status": "published",
+      "published": {
+        "meta": {
+          "thumbText": "Provide top-notch medical and dental assistance to the men and women of America’s Navy.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/medical-support",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522079616/navy/navy-corpsman-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522079616/navy/navy-corpsman-sm.jpg",
+          "date": "2018-01-18",
+          "category": "advisor",
+          "tags": ["advisor", "medical", "healthcare"]
+        },
+        "title": "Medical Support Team",
+        "changed": 1516278496975,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522079614/navy/navy-corpsman.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522079614/navy/navy-corpsman.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nGive fellow servicemembers routine, preventive and emergency health care. Help care for their families back home. \nTake part in relief missions, providing aid for hurricane or earthquake victims. Hospital Corpsmen provide top-notch medical and dental assistance to the men and women of America’s Navy.\n Navy Hospital Corpsmen provide treatment for thousands of Sailors and Marines, using quick thinking to help keep them fit and ready to serve at the best of their abilities. \n\nResponsibilities may include:\n\n  * Serve as an operating room technician for general and specialized surgery\n  * Process dental X-rays and operate X-ray equipment\n  * Work in the field with Navy SEALs or Seabees or be assigned to Fleet Marine Force\n  * Construct dental crowns and bridges \n  * Help administer a wide range of preventive care\n  * Deliver emergency medical or dental treatment to Sailors and Marines in the field\n  * Maintain patient treatment records\n  * Perform clinical tests\n\n"
+      },
+      "changed": 1516278496975
+    },
+    {
+      "published": {
+        "meta": {
+          "date": "2018-01-14",
+          "category": "integrator",
+          "tags": [
+            "integrator",
+            "intelligence",
+            "information technology"
+          ],
+          "thumbText": "Help generate insight that has strategic and tactical implications all over the world.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": true,
+          "author": "stemjobs",
+          "url": "/posts/2018/intelligence-specialist",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087250/navy/navy-intelligence-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087250/navy/navy-intelligence-sm.jpg"
+        },
+        "title": "Intelligence Specialist",
+        "changed": 1516276555552,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522087265/navy/navy-intelligence.jpg\"\n  src=\"http://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522087265/navy/navy-intelligence.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nThe development of useful intelligence starts with the diligent efforts of Navy Intelligence Specialists who break down seemingly limitless raw data into relevant and manageable pieces.  \nCollect, process, analyze, organize and disseminate information. Prepare detailed materials that communicate findings.\n As an Intelligence Specialist, you will be a critical part of the operational decision-making process. Working with potentially classified material \n\nResponsibilities may include:\n\n  * Analyzing intelligence information\n  * Preparing graphics and overlays\n  * Plotting imagery data using maps and charts \n  * Planning photographic reconnaissance missions\n  * Providing input to and receiving data from computerized networks ashore and afloat\n  * Utilizing intelligence databases, libraries and files\n\n"
+      },
+      "changed": 1516276555552,
+      "id": "BlGqMYfiRWDJG6ZKaEuW",
+      "draft": {
+        "meta": {
+          "date": "2018-01-14",
+          "category": "integrator",
+          "tags": [
+            "integrator",
+            "intelligence",
+            "information technology"
+          ],
+          "thumbText": "Help generate insight that has strategic and tactical implications all over the world.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/intelligence-specialist",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087250/navy/navy-intelligence-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087250/navy/navy-intelligence-sm.jpg"
+        },
+        "title": "Intelligence Specialist",
+        "changed": 1516276555552,
+        "text": "```marksy\n<Player url=\"https://www.youtube.com/watch?v=evaMpdSiZKk\" controls />\n```\n"
+      },
+      "status": "published"
+    },
+    {
+      "draft": {
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522087973/navy/navy-nuclear.jpg\"\n  src=\"http://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522087973/navy/navy-nuclear.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nSubmarines and aircraft carriers – the most imposing vessels in America’s Navy – rely on nuclear reactors as well as nuclear technicians, power plant operators and subsystems specialists to keep them running. \nThese highly trained, hands-on professionals perform the complex technical functions that are at the core of sub and carrier capabilities.\n This involves everything from operating nuclear propulsion plant machinery to controlling auxiliary equipment that supports Naval reactors to maintaining various electronic, propulsion and weapons systems.\n\nResponsibilities may include:\n\n  * Machinist Mate: Propulsion\n  * Electrician's Mate: Power Generation\n  * Electronics Technician: Messaging Systems \n  * Planning photographic reconnaissance missions\n\n",
+        "meta": {
+          "category": "producer",
+          "tags": [
+            "producer",
+            "nuclear",
+            "nuclear propulsion",
+            "physics"
+          ],
+          "thumbText": "Highly complex and classified nuclear reactors power the Navy’s most formidable vessels.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/nuclear-operations",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087960/navy/navy-nuclear-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087960/navy/navy-nuclear-sm.jpg",
+          "date": "2018-01-17"
+        },
+        "title": "Nuclear Operations",
+        "changed": 1516275826437
+      },
+      "status": "published",
+      "published": {
+        "changed": 1516275826437,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522087973/navy/navy-nuclear.jpg\"\n  src=\"http://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522087973/navy/navy-nuclear.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nSubmarines and aircraft carriers – the most imposing vessels in America’s Navy – rely on nuclear reactors as well as nuclear technicians, power plant operators and subsystems specialists to keep them running. \nThese highly trained, hands-on professionals perform the complex technical functions that are at the core of sub and carrier capabilities.\n This involves everything from operating nuclear propulsion plant machinery to controlling auxiliary equipment that supports Naval reactors to maintaining various electronic, propulsion and weapons systems.\n\nResponsibilities may include:\n\n  * Machinist Mate: Propulsion\n  * Electrician's Mate: Power Generation\n  * Electronics Technician: Messaging Systems \n  * Planning photographic reconnaissance missions\n\n",
+        "meta": {
+          "date": "2018-01-17",
+          "category": "producer",
+          "tags": [
+            "producer",
+            "nuclear",
+            "nuclear propulsion",
+            "physics"
+          ],
+          "thumbText": "Highly complex and classified nuclear reactors power the Navy’s most formidable vessels.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/nuclear-operations",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087960/navy/navy-nuclear-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522087960/navy/navy-nuclear-sm.jpg"
+        },
+        "title": "Nuclear Operations"
+      },
+      "changed": 1516275826437,
+      "id": "tDbrGINN5idtOLxhiAZ0"
+    },
+    {
+      "id": "ysk0wd4RgJpNDhTdePXu",
+      "draft": {
+        "changed": 1516276216369,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522089925/navy/special-warfare.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522089925/navy/special-warfare.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nSpecial Warfare Combatant-Craft Crewmen (SWCC) are specially trained to operate on and around rivers and coastal regions around the world. \nThese highly trained, hands-on professionals perform the complex technical functions that are at the core of sub and carrier capabilities.\n Wielding extreme firepower and a deadly skill set, SWCC operators support special warfare/special operations missions as well as conduct direct action and special reconnaissance missions of their own.\n\nResponsibilities may include:\n\n  * Insert and extract SEALs and other Special Operations personnel from a variety of Naval Surface Warfare vessels\n  * Collect important data about enemy military installations and shipping traffic in coastal areas\n  * Operate independently among small units or integrate with other U.S. Special Operations forces \n  * Operate and maintain ordnance systems, communications, electronics, small boats and other equipment associated with SWCC and other special operations missions\n\n",
+        "meta": {
+          "date": "2018-01-17",
+          "category": "solver",
+          "tags": [
+            "solver",
+            "special operations",
+            "special warfare"
+          ],
+          "thumbText": "Providing critical mission support to Navy SEALs. Operating state-of-the-art, high-performance boats.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/special-warfare",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522089918/navy/special-warfare-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522089918/navy/special-warfare-sm.jpg"
+        },
+        "title": "Special Warfare Craft Crew"
+      },
+      "status": "published",
+      "published": {
+        "meta": {
+          "thumbText": "Providing critical mission support to Navy SEALs. Operating state-of-the-art, high-performance boats.",
+          "language": "en",
+          "hasTranslation": false,
+          "featured": false,
+          "author": "stemjobs",
+          "url": "/posts/2018/special-warfare",
+          "ogImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522089918/navy/special-warfare-sm.jpg",
+          "thumbImage": "https://res.cloudinary.com/victorydev/image/upload/c_scale,w_370/v1522089918/navy/special-warfare-sm.jpg",
+          "date": "2018-01-17",
+          "category": "solver",
+          "tags": [
+            "solver",
+            "special operations",
+            "special warfare"
+          ]
+        },
+        "title": "Special Warfare Craft Crew",
+        "changed": 1516276216369,
+        "text": "\n```marksy\n<Image \n  previewSrc=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_80/v1522089925/navy/special-warfare.jpg\"\n  src=\"https://res.cloudinary.com/victorydev/image/upload/c_scale,w_752/v1522089925/navy/special-warfare.jpg\" \n  width={752} \n  height={423}\n  lazy={false}\n/>\n```\n\n***\n\nSpecial Warfare Combatant-Craft Crewmen (SWCC) are specially trained to operate on and around rivers and coastal regions around the world. \nThese highly trained, hands-on professionals perform the complex technical functions that are at the core of sub and carrier capabilities.\n Wielding extreme firepower and a deadly skill set, SWCC operators support special warfare/special operations missions as well as conduct direct action and special reconnaissance missions of their own.\n\nResponsibilities may include:\n\n  * Insert and extract SEALs and other Special Operations personnel from a variety of Naval Surface Warfare vessels\n  * Collect important data about enemy military installations and shipping traffic in coastal areas\n  * Operate independently among small units or integrate with other U.S. Special Operations forces \n  * Operate and maintain ordnance systems, communications, electronics, small boats and other equipment associated with SWCC and other special operations missions\n\n"
+      },
+      "changed": 1516276216369
+    }
+  ],
+  "categories": [
+    {
+      "id": "advisor",
+      "title": "Advisor"
+    },
+    {
+      "id": "designer",
+      "title": "Designer"
+    },
+    {
+      "id": "explorer",
+      "title": "Explorer"
+    },
+    {
+      "id": "integrator",
+      "title": "Integrator"
+    },
+    {
+      "id": "investigator",
+      "title": "Investigator"
+    },
+    {
+      "id": "maker",
+      "title": "Maker"
+    },
+    {
+      "id": "producer",
+      "title": "Producer"
+    },
+    {
+      "id": "solver",
+      "title": "Solver"
+    }
+  ]
+}

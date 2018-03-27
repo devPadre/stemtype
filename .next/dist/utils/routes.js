@@ -1,0 +1,10 @@
+"use strict";
+
+var routes = module.exports = require("next-routes")();
+
+routes.add({ name: "index", pattern: "/", page: "index" }).add({ name: "category", pattern: "/categories/:category", page: "category" }).add({ name: "tag", pattern: "/tags/:tag", page: "tag" }).add({ name: "author", pattern: "/authors/:author", page: "author" }).add({ name: "preview", pattern: "/preview", page: "preview" }).add({ name: "admin", pattern: "/admin", page: "admin/index" }).add({ name: "stemtype", pattern: "/stemtype", page: "stemtype" }).add({
+  name: "adminSettings",
+  pattern: "/admin/settings",
+  page: "admin/settings"
+}).add({ name: "adminLogin", pattern: "/admin/login", page: "admin/login" }).add({ name: "adminEditor", pattern: "/admin/editor", page: "admin/editor" });
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInV0aWxzL3JvdXRlcy5qcyJdLCJuYW1lcyI6WyJyb3V0ZXMiLCJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSIsImFkZCIsIm5hbWUiLCJwYXR0ZXJuIiwicGFnZSJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFNLFNBQVUsT0FBQSxBQUFPLFVBQXZCLEFBQWlDOztBQUVqQyxPQUFBLEFBQ0csSUFBSSxFQUFFLE1BQUYsQUFBUSxTQUFTLFNBQWpCLEFBQTBCLEtBQUssTUFEdEMsQUFDTyxBQUFxQyxXQUQ1QyxBQUVHLElBQUksRUFBRSxNQUFGLEFBQVEsWUFBWSxTQUFwQixBQUE2Qix5QkFBeUIsTUFGN0QsQUFFTyxBQUE0RCxjQUZuRSxBQUdHLElBQUksRUFBRSxNQUFGLEFBQVEsT0FBTyxTQUFmLEFBQXdCLGNBQWMsTUFIN0MsQUFHTyxBQUE0QyxTQUhuRCxBQUlHLElBQUksRUFBRSxNQUFGLEFBQVEsVUFBVSxTQUFsQixBQUEyQixvQkFBb0IsTUFKdEQsQUFJTyxBQUFxRCxZQUo1RCxBQUtHLElBQUksRUFBRSxNQUFGLEFBQVEsV0FBVyxTQUFuQixBQUE0QixZQUFZLE1BTC9DLEFBS08sQUFBOEMsYUFMckQsQUFNRyxJQUFJLEVBQUUsTUFBRixBQUFRLFNBQVMsU0FBakIsQUFBMEIsVUFBVSxNQU4zQyxBQU1PLEFBQTBDLGlCQU5qRCxBQU9HLElBQUksRUFBRSxNQUFGLEFBQVEsWUFBWSxTQUFwQixBQUE2QixhQUFhLE1BUGpELEFBT08sQUFBZ0QsY0FQdkQsQUFRRztRQUFJLEFBQ0csQUFDTjtXQUZHLEFBRU0sQUFDVDtRQVhKLEFBUU8sQUFHRztBQUhILEFBQ0gsR0FUSixBQWFHLElBQUksRUFBRSxNQUFGLEFBQVEsY0FBYyxTQUF0QixBQUErQixnQkFBZ0IsTUFidEQsQUFhTyxBQUFxRCxpQkFiNUQsQUFjRyxJQUFJLEVBQUUsTUFBRixBQUFRLGVBQWUsU0FBdkIsQUFBZ0MsaUJBQWlCLE1BZHhELEFBY08sQUFBdUQiLCJmaWxlIjoicm91dGVzLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9kbmljaG9scy9Eb2N1bWVudHMvUHJvamVjdHMvU1RFTUpPQlMvQ2xpZW50cy9SZWRjZWxsL1JlZGNlbGwgRGV2L3N0ZW10eXBlIn0=
