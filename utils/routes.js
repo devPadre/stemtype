@@ -8,6 +8,7 @@ routes
   .add({ name: "preview", pattern: "/preview", page: "preview" })
   .add({ name: "admin", pattern: "/admin", page: "admin/index" })
   .add({ name: "stemtype", pattern: "/stemtype", page: "stemtype" })
+  .add({ name: "quiz", pattern: "/quiz", page: "quiz" })
   .add({
     name: "adminSettings",
     pattern: "/admin/settings",

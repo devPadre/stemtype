@@ -16,6 +16,7 @@ import LinkButton from "../components/LinkButton";
 import Hr from "../components/Hr";
 import Config from "../utils/config";
 import SocialLink from "../components/SocialLink";
+import Link from 'next/link';
 
 
 
@@ -51,11 +52,12 @@ class Index extends React.Component {
         <Header> 
           <h1>Welcome to the Stem Type™ Navigator</h1>
               <Col xs={12} sm={12} md={12}>
-              <SocialLink href={Config.social.stemjobs.href}>
-                <LoadMoreButton
+              <Link href="/quiz">
+                <a><LinkButton
                   title={"Find Your Stem Type™"}
                 />
-                </SocialLink>
+                </a>
+                </Link>
               </Col>
           <h3>STEM Type™ connects your passions and dreams</h3>
           <h3> the right opportunities so that you can find career success! </h3>

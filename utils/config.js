@@ -23,8 +23,12 @@ module.exports = {
       route: "index"
     },
     {
-      text: "Stem Type",
+      text: "Stem Types",
       route: "stemtype"
+      },
+    {
+      text: "Quiz",
+      route: "quiz"
       }
   ],
   social: {
@@ -36,9 +40,9 @@ module.exports = {
       href: "https://vimeo.com",
       title: "Vimeo"
     },
-    stemjobs: {
-      href: "https://stemjobs.com/stem-type-quiz-main/",
-      title: "Stemjobs"
+    stemtype: {
+      href: "https://vimeo.com",
+      title: "Stem Type Quiz"
     },
     instagram: {
       href: "https://www.instagram.com",
