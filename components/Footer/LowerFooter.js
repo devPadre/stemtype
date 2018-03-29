@@ -52,13 +52,13 @@ export default ({ copyright }) => (
             <Icons.Facebook />
             <span>{Config.social.facebook.title}</span>
           </FooterSocialLink>
-          <FooterSocialLink href={Config.social.instagram.href}>
-            <Icons.Instagram />
-            <span>{Config.social.instagram.title}</span>
+          <FooterSocialLink href={Config.social.twitter.href}>
+            <Icons.Twitter />
+            <span>{Config.social.twitter.title}</span>
           </FooterSocialLink>
-          <FooterSocialLink href={Config.social.vimeo.href} size="26px">
-            <Icons.Vimeo />
-            <span>{Config.social.vimeo.title}</span>
+          <FooterSocialLink href={Config.social.youtube.href}>
+            <Icons.Youtube />
+            <span>{Config.social.youtube.title}</span>
           </FooterSocialLink>
         </SocialCol>
       </Row>

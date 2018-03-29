@@ -1,8 +1,8 @@
 module.exports = {
-  baseUrl: "https://navy.stemjobs.com",
+  baseUrl: "https://navy.stemtype.com",
   siteTitle: "Stem Type",
   description: "Stem Type quiz and content system with NextJS and Firestore",
-  copyright: "Redcell Talent.",
+  copyright: "Redcell Talent | Powered by Redcell Talent",
   languages: {
     en: {
       id: "en",
@@ -33,19 +33,27 @@ module.exports = {
   ],
   social: {
     facebook: {
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/stemjobs/",
       title: "Facebook"
     },
+    youtube: {
+      href: "https://www.youtube.com/channel/UCaA3j4Wtd3L9dJTC5T8RVaA",
+      title: "Youtube"
+    },
     vimeo: {
-      href: "https://vimeo.com",
+      href: "https://youtube.com",
       title: "Vimeo"
     },
     stemtype: {
       href: "https://vimeo.com",
       title: "Stem Type Quiz"
     },
+    twitter: {
+      href: "https://twitter.com/stem_jobs",
+      title: "Twitter"
+    },
     instagram: {
-      href: "https://www.instagram.com",
+      href: "https://twitter.com/stem_jobs",
       title: "Instagram"
     }
   },

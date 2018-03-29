@@ -56,12 +56,12 @@ var QuizEmbed = function (_Component) {
     key: "render",
     value: function render() {
       var divStyle = {
-        maxWidth: "90",
+        maxWidth: "85",
         margin: "0 auto 0 auto",
         leftmargin: "10px",
         rightmargin: "10px",
         width: "80%",
-        height: "450px"
+        height: "425px"
       };
 
       var iframeStyle = {

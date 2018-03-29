@@ -60,7 +60,7 @@ class Index extends React.Component {
                 </Link>
               </Col>
           <h3>STEM Type™ connects your passions and dreams</h3>
-          <h3> the right opportunities so that you can find career success! </h3>
+          <h3> to the right opportunities so that you can find career success! </h3>
         <Hr />
         </Header>
         <div style={{ padding: 20 }}>

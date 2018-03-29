@@ -13,12 +13,12 @@ class QuizEmbed extends Component {
  
   render() {
     const divStyle = {
-          maxWidth: "90",
+          maxWidth: "85",
           margin: "0 auto 0 auto",
           leftmargin: "10px",
           rightmargin: "10px",
           width: "80%",
-          height: "450px"
+          height: "425px"
         };
  
     const iframeStyle = {

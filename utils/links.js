@@ -93,24 +93,6 @@ export function getIndexLink(lang = Config.defaultLanguage) {
   };
 }
 
-// export function getStemTypeLink(author, children, lang = Config.defaultLanguage) {
-//   return {
-//     route: "stemtype",
-//     params: {
-//       lang
-//     }
-//   };
-// }
-
-// export function getQuizLink(author, children, lang = Config.defaultLanguage) {
-//   return {
-//     route: "quiz",
-//     params: {
-//       lang
-//     }
-//   };
-// }
-
 export function AuthorLink({ author, lang, children, className }) {
   return (
     <Link {...getAuthorLink(author, lang)}>

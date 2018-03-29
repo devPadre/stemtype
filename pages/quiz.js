@@ -49,14 +49,11 @@ class Quiz extends React.Component {
           <Row>
             <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
             <StemBanner />
-            <Header style={{ paddingbottom: 20 }}>  
+            <Header style={{ paddingbottom: "5px" }}>  
             <h2>Welcome to the STEM Type Quiz!</h2>
-            <div style={{ paddingBottom: "5%" }} />
+            <div style={{ paddingBottom: "5px" }} />
             </Header>
               </Col>
-            <Col xs={12}>
-              
-            </Col>
           </Row>
           <Row>
             <Col xs={12} sm={12} md={12}>
