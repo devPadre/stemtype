@@ -26,51 +26,21 @@ var _HrStem2 = _interopRequireDefault(_HrStem);
 
 var _routes = require("../utils/routes");
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-    ["\n  width: 100%;\n  position: relative;\n"],
-    ["\n  width: 100%;\n  position: relative;\n"]
-  ),
-  _templateObject2 = (0, _taggedTemplateLiteral3.default)(
-    [
-      "\n  display: block;\n  position: relative;\n  width: 30%;\n  max-width: 340px;\n  padding-top: 120px;\n  padding-bottom: 10px;\n  margin: 0 auto;\n\n  @media screen and (max-width: ",
-      ") {\n    width: 70%;\n  }\n\n  @media screen and (min-width: ",
-      ") and (max-width: ",
-      ") {\n    width: 50%;\n  }\n"
-    ],
-    [
-      "\n  display: block;\n  position: relative;\n  width: 30%;\n  max-width: 340px;\n  padding-top: 120px;\n  padding-bottom: 10px;\n  margin: 0 auto;\n\n  @media screen and (max-width: ",
-      ") {\n    width: 70%;\n  }\n\n  @media screen and (min-width: ",
-      ") and (max-width: ",
-      ") {\n    width: 50%;\n  }\n"
-    ]
-  ),
-  _templateObject3 = (0, _taggedTemplateLiteral3.default)(
-    [
-      "\n  position: absolute;\n  left: 0;\n  top: 0px;\n  width: 100%;\n  height: auto;\n"
-    ],
-    [
-      "\n  position: absolute;\n  left: 0;\n  top: 0px;\n  width: 100%;\n  height: auto;\n"
-    ]
-  );
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  width: 100%;\n  position: relative;\n"], ["\n  width: 100%;\n  position: relative;\n"]),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(["\n  display: block;\n  position: relative;\n  width: 30%;\n  max-width: 340px;\n  padding-top: 120px;\n  padding-bottom: 10px;\n  margin: 0 auto;\n\n  @media screen and (max-width: ", ") {\n    width: 70%;\n  }\n\n  @media screen and (min-width: ", ") and (max-width: ", ") {\n    width: 50%;\n  }\n"], ["\n  display: block;\n  position: relative;\n  width: 30%;\n  max-width: 340px;\n  padding-top: 120px;\n  padding-bottom: 10px;\n  margin: 0 auto;\n\n  @media screen and (max-width: ", ") {\n    width: 70%;\n  }\n\n  @media screen and (min-width: ", ") and (max-width: ", ") {\n    width: 50%;\n  }\n"]),
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(["\n  position: absolute;\n  left: 0;\n  top: 0px;\n  width: 100%;\n  height: auto;\n"], ["\n  position: absolute;\n  left: 0;\n  top: 0px;\n  width: 100%;\n  height: auto;\n"]);
 
 var LogoBannerContainer = _styledComponents2.default.div(_templateObject);
 
-var LogoWrapper = _styledComponents2.default.div(
-  _templateObject2,
-  function(props) {
-    return props.theme.flexboxgrid.breakpoints.sm + "em";
-  },
-  function(props) {
-    return props.theme.flexboxgrid.breakpoints.sm + "em";
-  },
-  function(props) {
-    return props.theme.flexboxgrid.breakpoints.md + "em";
-  }
-);
+var LogoWrapper = _styledComponents2.default.div(_templateObject2, function (props) {
+  return props.theme.flexboxgrid.breakpoints.sm + "em";
+}, function (props) {
+  return props.theme.flexboxgrid.breakpoints.sm + "em";
+}, function (props) {
+  return props.theme.flexboxgrid.breakpoints.md + "em";
+});
 
 var LogoImage = _styledComponents2.default.img.attrs({
   src: "/assets/stem.png",
@@ -79,11 +49,7 @@ var LogoImage = _styledComponents2.default.img.attrs({
   alt: _config2.default.siteTitle + " logo"
 })(_templateObject3);
 
-exports.default = function(_ref) {
+exports.default = function (_ref) {
   var lang = _ref.lang;
-  return _react2.default.createElement(
-    LogoBannerContainer,
-    null,
-    _react2.default.createElement(_HrStem2.default, null)
-  );
+  return _react2.default.createElement(LogoBannerContainer, null, _react2.default.createElement(_HrStem2.default, null));
 };

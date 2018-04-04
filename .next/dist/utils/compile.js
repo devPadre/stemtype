@@ -32,9 +32,7 @@ var _Hr = require("../components/Hr");
 
 var _Hr2 = _interopRequireDefault(_Hr);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var compile = (0, _components2.default)({
   createElement: _react.createElement,

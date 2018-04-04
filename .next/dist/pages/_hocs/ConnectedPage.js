@@ -19,9 +19,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -35,40 +33,27 @@ var _mobxReact = require("mobx-react");
 
 var _stores = require("../../stores");
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var blogStore = _stores.BlogStore.create({});
 
-var ConnectedPage = (function(_Component) {
+var ConnectedPage = function (_Component) {
   (0, _inherits3.default)(ConnectedPage, _Component);
 
   function ConnectedPage() {
     (0, _classCallCheck3.default)(this, ConnectedPage);
 
-    return (0, _possibleConstructorReturn3.default)(
-      this,
-      (
-        ConnectedPage.__proto__ || (0, _getPrototypeOf2.default)(ConnectedPage)
-      ).apply(this, arguments)
-    );
+    return (0, _possibleConstructorReturn3.default)(this, (ConnectedPage.__proto__ || (0, _getPrototypeOf2.default)(ConnectedPage)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(ConnectedPage, [
-    {
-      key: "render",
-      value: function render() {
-        return _react2.default.createElement(
-          _mobxReact.Provider,
-          { blog: blogStore },
-          this.props.children
-        );
-      }
+  (0, _createClass3.default)(ConnectedPage, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(_mobxReact.Provider, { blog: blogStore }, this.props.children);
     }
-  ]);
+  }]);
 
   return ConnectedPage;
-})(_react.Component);
+}(_react.Component);
 
 exports.default = ConnectedPage;

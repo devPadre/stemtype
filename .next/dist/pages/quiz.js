@@ -18,9 +18,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -96,41 +94,25 @@ var _StemBanner = require("../components/StemBanner");
 
 var _StemBanner2 = _interopRequireDefault(_StemBanner);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-  [
-    "\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"
-  ],
-  [
-    "\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"
-  ]
-);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"], ["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"]);
 
 var Header = _styledComponents2.default.div(_templateObject);
 
-var Quiz = (function(_React$Component) {
+var Quiz = function (_React$Component) {
   (0, _inherits3.default)(Quiz, _React$Component);
 
   function Quiz() {
     (0, _classCallCheck3.default)(this, Quiz);
 
-    return (0, _possibleConstructorReturn3.default)(
-      this,
-      (Quiz.__proto__ || (0, _getPrototypeOf2.default)(Quiz)).apply(
-        this,
-        arguments
-      )
-    );
+    return (0, _possibleConstructorReturn3.default)(this, (Quiz.__proto__ || (0, _getPrototypeOf2.default)(Quiz)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(Quiz, [
-    {
-      key: "render",
-      value: function render() {
-        var _props = this.props,
+  (0, _createClass3.default)(Quiz, [{
+    key: "render",
+    value: function render() {
+      var _props = this.props,
           lang = _props.lang,
           posts = _props.posts,
           hasMore = _props.hasMore,
@@ -139,55 +121,15 @@ var Quiz = (function(_React$Component) {
           imageWidth = _props.imageWidth,
           imageHeight = _props.imageHeight;
 
-        var authorInfo = _config2.default.authors[stemjobs];
-        var stemjobs = _config2.default.authors[stemjobs];
+      var authorInfo = _config2.default.authors[stemjobs];
+      var stemjobs = _config2.default.authors[stemjobs];
 
-        return _react2.default.createElement(
-          _Page2.default,
-          { lang: lang },
-          _react2.default.createElement(_CustomHead2.default, null),
-          _react2.default.createElement(_LogoBanner2.default, { lang: lang }),
-          _react2.default.createElement(
-            _reactStyledFlexboxgrid.Grid,
-            { style: { overflow: "hidden" } },
-            _react2.default.createElement(
-              _reactStyledFlexboxgrid.Row,
-              null,
-              _react2.default.createElement(
-                _reactStyledFlexboxgrid.Col,
-                { xs: 12, lg: 10, lgOffset: 1, style: { padding: 0 } },
-                _react2.default.createElement(_StemBanner2.default, null),
-                _react2.default.createElement(
-                  Header,
-                  { style: { paddingbottom: "5px" } },
-                  _react2.default.createElement(
-                    "h2",
-                    null,
-                    "Welcome to the STEM Type Quiz!"
-                  ),
-                  _react2.default.createElement("div", {
-                    style: { paddingBottom: "5px" }
-                  })
-                )
-              )
-            ),
-            _react2.default.createElement(
-              _reactStyledFlexboxgrid.Row,
-              null,
-              _react2.default.createElement(
-                _reactStyledFlexboxgrid.Col,
-                { xs: 12, sm: 12, md: 12 },
-                _react2.default.createElement(_QuizEmbed2.default, null)
-              )
-            )
-          )
-        );
-      }
+      return _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, lg: 10, lgOffset: 1, style: { padding: 0 } }, _react2.default.createElement(_StemBanner2.default, null), _react2.default.createElement(Header, { style: { paddingbottom: "5px" } }, _react2.default.createElement("h2", null, "Welcome to the STEM Type Quiz!"), _react2.default.createElement("div", { style: { paddingBottom: "5px" } })))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 12 }, _react2.default.createElement(_QuizEmbed2.default, null)))));
     }
-  ]);
+  }]);
 
   return Quiz;
-})(_react2.default.Component);
+}(_react2.default.Component);
 
 var POSTS_PER_PAGE = 5;
 

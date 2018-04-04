@@ -57,9 +57,7 @@ var _StemLogo = require("./StemLogo");
 
 var _StemLogo2 = _interopRequireDefault(_StemLogo);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.Burger = _Burger2.default;
 exports.Facebook = _Facebook2.default;

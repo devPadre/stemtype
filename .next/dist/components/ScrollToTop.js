@@ -32,32 +32,17 @@ var _media = require("../utils/media");
 
 var _media2 = _interopRequireDefault(_media);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-    ["\n  display: inline-block;\n  font-size: 40px;\n  ", ";\n"],
-    ["\n  display: inline-block;\n  font-size: 40px;\n  ", ";\n"]
-  ),
-  _templateObject2 = (0, _taggedTemplateLiteral3.default)(
-    ["display: none"],
-    ["display: none"]
-  );
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  display: inline-block;\n  font-size: 40px;\n  ", ";\n"], ["\n  display: inline-block;\n  font-size: 40px;\n  ", ";\n"]),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(["display: none"], ["display: none"]);
 
-var StyledArrowUp = (0, _styledComponents2.default)(_Icons2.default.ArrowUp)(
-  _templateObject,
-  _media2.default.sm(_templateObject2)
-);
+var StyledArrowUp = (0, _styledComponents2.default)(_Icons2.default.ArrowUp)(_templateObject, _media2.default.sm(_templateObject2));
 
-exports.default = function(_ref) {
+exports.default = function (_ref) {
   var showUnder = _ref.showUnder;
-  return _react2.default.createElement(
-    _reactScrollUp2.default,
-    {
-      showUnder: showUnder || 150,
-      style: { right: 20, bottom: 12, color: _theme2.default.colors.black }
-    },
-    _react2.default.createElement(StyledArrowUp, null)
-  );
+  return _react2.default.createElement(_reactScrollUp2.default, {
+    showUnder: showUnder || 150,
+    style: { right: 20, bottom: 12, color: _theme2.default.colors.black }
+  }, _react2.default.createElement(StyledArrowUp, null));
 };

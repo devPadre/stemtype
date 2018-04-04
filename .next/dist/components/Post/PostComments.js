@@ -18,9 +18,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -46,57 +44,37 @@ var _config = require("../../utils/config");
 
 var _config2 = _interopRequireDefault(_config);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-  [
-    "\n  display: block;\n  margin-bottom: 26px;\n  min-height: 323px;\n\n  .dsq-brlink {\n    display: none;\n  }\n"
-  ],
-  [
-    "\n  display: block;\n  margin-bottom: 26px;\n  min-height: 323px;\n\n  .dsq-brlink {\n    display: none;\n  }\n"
-  ]
-);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  display: block;\n  margin-bottom: 26px;\n  min-height: 323px;\n\n  .dsq-brlink {\n    display: none;\n  }\n"], ["\n  display: block;\n  margin-bottom: 26px;\n  min-height: 323px;\n\n  .dsq-brlink {\n    display: none;\n  }\n"]);
 
 var PostCommentsContainer = _styledComponents2.default.div(_templateObject);
 
-var PostComments = (function(_React$Component) {
+var PostComments = function (_React$Component) {
   (0, _inherits3.default)(PostComments, _React$Component);
 
   function PostComments() {
     (0, _classCallCheck3.default)(this, PostComments);
 
-    return (0, _possibleConstructorReturn3.default)(
-      this,
-      (
-        PostComments.__proto__ || (0, _getPrototypeOf2.default)(PostComments)
-      ).apply(this, arguments)
-    );
+    return (0, _possibleConstructorReturn3.default)(this, (PostComments.__proto__ || (0, _getPrototypeOf2.default)(PostComments)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(PostComments, [
-    {
-      key: "render",
-      value: function render() {
-        var url = "" + window.location.origin + this.props.url;
-        return _react2.default.createElement(_DiscusThread2.default, {
-          shortname: _config2.default.disqusShortname,
-          title: this.props.title,
-          identifier: url,
-          url: url
-        });
-      }
+  (0, _createClass3.default)(PostComments, [{
+    key: "render",
+    value: function render() {
+      var url = "" + window.location.origin + this.props.url;
+      return _react2.default.createElement(_DiscusThread2.default, {
+        shortname: _config2.default.disqusShortname,
+        title: this.props.title,
+        identifier: url,
+        url: url
+      });
     }
-  ]);
+  }]);
 
   return PostComments;
-})(_react2.default.Component);
+}(_react2.default.Component);
 
-exports.default = function(props) {
-  return _react2.default.createElement(
-    PostCommentsContainer,
-    null,
-    _react2.default.createElement(PostComments, props)
-  );
+exports.default = function (props) {
+  return _react2.default.createElement(PostCommentsContainer, null, _react2.default.createElement(PostComments, props));
 };

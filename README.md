@@ -146,3 +146,48 @@ Wait.. But what's about CMS part?
 Licensed under the MIT License, Copyright © 2018-present Redcell Talent
 
 See [LICENSE](./LICENSE) for more information.
+
+## Docker
+
+### Run Local
+```
+docker run -d --restart=always -p 3000:3000 your-app:tag
+```
+This will run the container accessible at localhost:3000
+
+docker images
+docker tag bf92d6aa7b60 devpadre/navy-stem-type:latest
+docker push devpadre/navy-stem-type
+
+### Push to Google Cloud
+gcloud projects list
+
+gcloud beta auth configure-docker
+ - only need to run gcloud auth once
+
+Tag the local container with google's repository (for US use. us.gcr.io) then project name then what you want it to be called with a tagged version
+```
+docker tag navy-stem-type us.gcr.io/stem-type-navy/navy-stem-type:v1
+
+docker push us.gcr.io/stem-type-navy/navy-stem-type:latest
+
+gcloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type:latest
+```
+
+Create Container clusters - may have to use init if you have not initialized your project correctly
+```
+gcloud init
+
+gcloud container clusters create navy-stem-type --num-nodes=3
+
+gcloud container clusters get-credentials navy-stem-type --zone northamerica-northeast1-b --project stem-type-navy
+```
+Run and Expose your deployment to the internet
+
+```
+kubectl run navy-stem-type --image=us.gcr.io/stem-type-navy/navy-stem-type --port 3000
+
+kubectl expose deployment navy-stem-type  --type=LoadBalancer --port 80 --target-port 3000
+
+kubectl get service
+

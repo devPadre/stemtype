@@ -19,9 +19,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -33,62 +31,42 @@ var _react2 = _interopRequireDefault(_react);
 
 var _Tags = require("../Post/Tags");
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var TagsCloud = (function(_React$Component) {
+var TagsCloud = function (_React$Component) {
   (0, _inherits3.default)(TagsCloud, _React$Component);
 
   function TagsCloud() {
     (0, _classCallCheck3.default)(this, TagsCloud);
 
-    return (0, _possibleConstructorReturn3.default)(
-      this,
-      (TagsCloud.__proto__ || (0, _getPrototypeOf2.default)(TagsCloud)).apply(
-        this,
-        arguments
-      )
-    );
+    return (0, _possibleConstructorReturn3.default)(this, (TagsCloud.__proto__ || (0, _getPrototypeOf2.default)(TagsCloud)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(TagsCloud, [
-    {
-      key: "shouldComponentUpdate",
-      value: function shouldComponentUpdate() {
-        return false;
-      }
-    },
-    {
-      key: "render",
-      value: function render() {
-        var _props = this.props,
+  (0, _createClass3.default)(TagsCloud, [{
+    key: "shouldComponentUpdate",
+    value: function shouldComponentUpdate() {
+      return false;
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props = this.props,
           className = _props.className,
           tags = _props.tags,
           lang = _props.lang;
 
-        return _react2.default.createElement(
-          "div",
-          { className: className },
-          tags.map(function(tag) {
-            return _react2.default.createElement(
-              _Tags.Tag,
-              {
-                key: tag.value,
-                tag: tag.value,
-                lang: lang,
-                style: { fontSize: 10 }
-              },
-              "#",
-              tag.value
-            );
-          })
-        );
-      }
+      return _react2.default.createElement("div", { className: className }, tags.map(function (tag) {
+        return _react2.default.createElement(_Tags.Tag, {
+          key: tag.value,
+          tag: tag.value,
+          lang: lang,
+          style: { fontSize: 10 }
+        }, "#", tag.value);
+      }));
     }
-  ]);
+  }]);
 
   return TagsCloud;
-})(_react2.default.Component);
+}(_react2.default.Component);
 
 exports.default = TagsCloud;

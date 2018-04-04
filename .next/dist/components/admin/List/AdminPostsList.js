@@ -19,9 +19,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -49,81 +47,39 @@ var _AdminPostsListItem = require("./AdminPostsListItem");
 
 var _AdminPostsListItem2 = _interopRequireDefault(_AdminPostsListItem);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-  [
-    "\n  margin: 100px auto;\n  text-align: center;\n\n  h2 {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n"
-  ],
-  [
-    "\n  margin: 100px auto;\n  text-align: center;\n\n  h2 {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n"
-  ]
-);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  margin: 100px auto;\n  text-align: center;\n\n  h2 {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n"], ["\n  margin: 100px auto;\n  text-align: center;\n\n  h2 {\n    font-size: 20px;\n    margin-bottom: 20px;\n  }\n"]);
 
 var NotFound = _styledComponents2.default.div(_templateObject);
 
-var AdminPostsList = (function(_React$Component) {
+var AdminPostsList = function (_React$Component) {
   (0, _inherits3.default)(AdminPostsList, _React$Component);
 
   function AdminPostsList() {
     (0, _classCallCheck3.default)(this, AdminPostsList);
 
-    return (0, _possibleConstructorReturn3.default)(
-      this,
-      (
-        AdminPostsList.__proto__ ||
-        (0, _getPrototypeOf2.default)(AdminPostsList)
-      ).apply(this, arguments)
-    );
+    return (0, _possibleConstructorReturn3.default)(this, (AdminPostsList.__proto__ || (0, _getPrototypeOf2.default)(AdminPostsList)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(AdminPostsList, [
-    {
-      key: "renderPost",
-      value: function renderPost(post) {
-        return _react2.default.createElement(_AdminPostsListItem2.default, {
-          key: post.id,
-          post: post
-        });
-      }
-    },
-    {
-      key: "renderNotFound",
-      value: function renderNotFound() {
-        return _react2.default.createElement(
-          NotFound,
-          null,
-          _react2.default.createElement(
-            "h2",
-            null,
-            "No stories match the current filter"
-          ),
-          _react2.default.createElement(
-            _antd.Button,
-            { onClick: this.props.onResetFilters },
-            "Reset filter"
-          )
-        );
-      }
-    },
-    {
-      key: "render",
-      value: function render() {
-        return _react2.default.createElement(
-          "div",
-          null,
-          _react2.default.createElement(_AdminPostsFilters2.default, null),
-          this.props.posts.length > 0
-            ? this.props.posts.map(this.renderPost)
-            : this.renderNotFound()
-        );
-      }
+  (0, _createClass3.default)(AdminPostsList, [{
+    key: "renderPost",
+    value: function renderPost(post) {
+      return _react2.default.createElement(_AdminPostsListItem2.default, { key: post.id, post: post });
     }
-  ]);
+  }, {
+    key: "renderNotFound",
+    value: function renderNotFound() {
+      return _react2.default.createElement(NotFound, null, _react2.default.createElement("h2", null, "No stories match the current filter"), _react2.default.createElement(_antd.Button, { onClick: this.props.onResetFilters }, "Reset filter"));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement("div", null, _react2.default.createElement(_AdminPostsFilters2.default, null), this.props.posts.length > 0 ? this.props.posts.map(this.renderPost) : this.renderNotFound());
+    }
+  }]);
 
   return AdminPostsList;
-})(_react2.default.Component);
+}(_react2.default.Component);
 
 exports.default = AdminPostsList;

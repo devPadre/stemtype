@@ -6,11 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 /* eslint-disable import/first */
 
 function isNode() {
-  return (
-    typeof process !== "undefined" &&
-    process.release &&
-    process.release.name === "node"
-  );
+  return typeof process !== "undefined" && process.release && process.release.name === "node";
 }
 
 if (isNode()) {

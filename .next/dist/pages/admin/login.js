@@ -18,9 +18,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -58,143 +56,80 @@ var _config = require("../../utils/config");
 
 var _config2 = _interopRequireDefault(_config);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _dec, _class;
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-    [
-      "\n  color: #000;\n  background: #fff;\n  height: 100vh;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"
-    ],
-    [
-      "\n  color: #000;\n  background: #fff;\n  height: 100vh;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"
-    ]
-  ),
-  _templateObject2 = (0, _taggedTemplateLiteral3.default)(
-    [
-      "\n  background-color: transparent;\n  border-width: 0;\n  font-size: 18px;\n  cursor: pointer;\n"
-    ],
-    [
-      "\n  background-color: transparent;\n  border-width: 0;\n  font-size: 18px;\n  cursor: pointer;\n"
-    ]
-  );
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  color: #000;\n  background: #fff;\n  height: 100vh;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"], ["\n  color: #000;\n  background: #fff;\n  height: 100vh;\n  text-align: center;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n"]),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(["\n  background-color: transparent;\n  border-width: 0;\n  font-size: 18px;\n  cursor: pointer;\n"], ["\n  background-color: transparent;\n  border-width: 0;\n  font-size: 18px;\n  cursor: pointer;\n"]);
 
 var PageContainter = _styledComponents2.default.div(_templateObject);
 
 var LoginButton = _styledComponents2.default.button(_templateObject2);
 
-var AdminLogin = ((_dec = (0, _mobxReact.inject)("blog")),
-_dec(
-  (_class =
-    (0, _mobxReact.observer)(
-      (_class = (function(_React$Component) {
-        (0, _inherits3.default)(AdminLogin, _React$Component);
+var AdminLogin = (_dec = (0, _mobxReact.inject)("blog"), _dec(_class = (0, _mobxReact.observer)(_class = function (_React$Component) {
+  (0, _inherits3.default)(AdminLogin, _React$Component);
 
-        function AdminLogin(props) {
-          (0, _classCallCheck3.default)(this, AdminLogin);
+  function AdminLogin(props) {
+    (0, _classCallCheck3.default)(this, AdminLogin);
 
-          var _this = (0, _possibleConstructorReturn3.default)(
-            this,
-            (
-              AdminLogin.__proto__ || (0, _getPrototypeOf2.default)(AdminLogin)
-            ).call(this, props)
-          );
+    var _this = (0, _possibleConstructorReturn3.default)(this, (AdminLogin.__proto__ || (0, _getPrototypeOf2.default)(AdminLogin)).call(this, props));
 
-          _this.onLoginClick = function() {
-            var auth = _this.props.blog.auth;
+    _this.onLoginClick = function () {
+      var auth = _this.props.blog.auth;
 
-            auth
-              .signInWithGoogle()
-              .then(function(_ref) {
-                var user = _ref.user;
+      auth.signInWithGoogle().then(function (_ref) {
+        var user = _ref.user;
 
-                auth.verifyIfUserIsAuthor(user).then(function(authorName) {
-                  if (!authorName) {
-                    _this.setState({ accessDenied: true });
-                  }
-                });
-              })
-              .catch(function() {
-                _this.setState({ accessDenied: true });
-              });
-          };
-
-          _this.state = {
-            accessDenied: false
-          };
-          return _this;
-        }
-
-        (0, _createClass3.default)(AdminLogin, [
-          {
-            key: "componentDidMount",
-            value: function componentDidMount() {
-              var _this2 = this;
-
-              this.props.blog.auth.subscribe();
-              this.disposer = (0, _mobx.autorun)(function() {
-                if (_this2.props.blog.auth.isAuthenticated) {
-                  _index2.default.replace("/admin");
-                }
-              });
-            }
-          },
-          {
-            key: "componentWillUnmount",
-            value: function componentWillUnmount() {
-              if (this.disposer) {
-                this.disposer();
-              }
-            }
-          },
-          {
-            key: "render",
-            value: function render() {
-              var _props$blog$auth = this.props.blog.auth,
-                isUserPending = _props$blog$auth.isUserPending,
-                isAuthenticated = _props$blog$auth.isAuthenticated;
-
-              return _react2.default.createElement(
-                _AdminPage2.default,
-                { key: "content", withLayout: false },
-                _react2.default.createElement(
-                  PageContainter,
-                  null,
-                  this.state.accessDenied === false &&
-                    (isUserPending || isAuthenticated) &&
-                    _react2.default.createElement("h2", null, "..."),
-                  this.state.accessDenied === false &&
-                    !isUserPending &&
-                    !isAuthenticated &&
-                    _react2.default.createElement(
-                      LoginButton,
-                      { onClick: this.onLoginClick },
-                      "Click to start writing..."
-                    ),
-                  this.state.accessDenied &&
-                    _react2.default.createElement(
-                      "h2",
-                      null,
-                      "Become an author to start writing on ",
-                      _config2.default.siteTitle
-                    )
-                )
-              );
-            }
+        auth.verifyIfUserIsAuthor(user).then(function (authorName) {
+          if (!authorName) {
+            _this.setState({ accessDenied: true });
           }
-        ]);
+        });
+      }).catch(function () {
+        _this.setState({ accessDenied: true });
+      });
+    };
 
-        return AdminLogin;
-      })(_react2.default.Component))
-    ) || _class)
-) || _class);
+    _this.state = {
+      accessDenied: false
+    };
+    return _this;
+  }
 
-exports.default = function() {
-  return _react2.default.createElement(
-    _ConnectedPage2.default,
-    null,
-    _react2.default.createElement(AdminLogin, null)
-  );
+  (0, _createClass3.default)(AdminLogin, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      var _this2 = this;
+
+      this.props.blog.auth.subscribe();
+      this.disposer = (0, _mobx.autorun)(function () {
+        if (_this2.props.blog.auth.isAuthenticated) {
+          _index2.default.replace("/admin");
+        }
+      });
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      if (this.disposer) {
+        this.disposer();
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _props$blog$auth = this.props.blog.auth,
+          isUserPending = _props$blog$auth.isUserPending,
+          isAuthenticated = _props$blog$auth.isAuthenticated;
+
+      return _react2.default.createElement(_AdminPage2.default, { key: "content", withLayout: false }, _react2.default.createElement(PageContainter, null, this.state.accessDenied === false && (isUserPending || isAuthenticated) && _react2.default.createElement("h2", null, "..."), this.state.accessDenied === false && !isUserPending && !isAuthenticated && _react2.default.createElement(LoginButton, { onClick: this.onLoginClick }, "Click to start writing..."), this.state.accessDenied && _react2.default.createElement("h2", null, "Become an author to start writing on ", _config2.default.siteTitle)));
+    }
+  }]);
+
+  return AdminLogin;
+}(_react2.default.Component)) || _class) || _class);
+
+exports.default = function () {
+  return _react2.default.createElement(_ConnectedPage2.default, null, _react2.default.createElement(AdminLogin, null));
 };

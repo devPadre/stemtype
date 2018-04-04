@@ -23,9 +23,7 @@ var _createClass3 = _interopRequireDefault(_createClass2);
 
 var _possibleConstructorReturn2 = require("babel-runtime/helpers/possibleConstructorReturn");
 
-var _possibleConstructorReturn3 = _interopRequireDefault(
-  _possibleConstructorReturn2
-);
+var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
 
 var _inherits2 = require("babel-runtime/helpers/inherits");
 
@@ -59,9 +57,7 @@ var _ConnectedPage2 = _interopRequireDefault(_ConnectedPage);
 
 var _antd = require("antd");
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _dec, _class;
 
@@ -69,10 +65,7 @@ var Header = _AdminPageSection2.default.Header;
 
 function download(filename, text) {
   var pom = document.createElement("a");
-  pom.setAttribute(
-    "href",
-    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
-  );
+  pom.setAttribute("href", "data:text/plain;charset=utf-8," + encodeURIComponent(text));
   pom.setAttribute("download", filename);
 
   if (document.createEvent) {
@@ -84,88 +77,48 @@ function download(filename, text) {
   }
 }
 
-var AdminSettings = (exports.AdminSettings = ((_dec = (0, _mobxReact.inject)(
-  "blog"
-)),
-_dec(
-  (_class = (function(_React$Component) {
-    (0, _inherits3.default)(AdminSettings, _React$Component);
+var AdminSettings = exports.AdminSettings = (_dec = (0, _mobxReact.inject)("blog"), _dec(_class = function (_React$Component) {
+  (0, _inherits3.default)(AdminSettings, _React$Component);
 
-    function AdminSettings(props) {
-      (0, _classCallCheck3.default)(this, AdminSettings);
+  function AdminSettings(props) {
+    (0, _classCallCheck3.default)(this, AdminSettings);
 
-      var _this = (0, _possibleConstructorReturn3.default)(
-        this,
-        (
-          AdminSettings.__proto__ ||
-          (0, _getPrototypeOf2.default)(AdminSettings)
-        ).call(this, props)
-      );
+    var _this = (0, _possibleConstructorReturn3.default)(this, (AdminSettings.__proto__ || (0, _getPrototypeOf2.default)(AdminSettings)).call(this, props));
 
-      _this.onBackupClick = function() {
-        _this.setState({ inProgress: true });
-        _this.props.blog
-          .backup()
-          .then(function(data) {
-            download(
-              "blog-backup-" +
-                (0, _moment2.default)().format("YYYY-MM-DD-hh-mm") +
-                ".json",
-              (0, _stringify2.default)(data, null, 2)
-            );
-            _this.setState({ inProgress: false });
-          })
-          .catch(function(e) {
-            _this.setState({ inProgress: false });
-          });
-      };
+    _this.onBackupClick = function () {
+      _this.setState({ inProgress: true });
+      _this.props.blog.backup().then(function (data) {
+        download("blog-backup-" + (0, _moment2.default)().format("YYYY-MM-DD-hh-mm") + ".json", (0, _stringify2.default)(data, null, 2));
+        _this.setState({ inProgress: false });
+      }).catch(function (e) {
+        _this.setState({ inProgress: false });
+      });
+    };
 
-      _this.state = {
-        inProgress: false
-      };
-      return _this;
+    _this.state = {
+      inProgress: false
+    };
+    return _this;
+  }
+
+  (0, _createClass3.default)(AdminSettings, [{
+    key: "render",
+    value: function render() {
+      return _react2.default.createElement(_AdminPage2.default, { user: this.props.user }, _react2.default.createElement(_AdminPageSection2.default, null, _react2.default.createElement(Header, null, "General"), _react2.default.createElement(_antd.Button, {
+        loading: this.state.inProgress,
+        size: "large",
+        type: "primary",
+        onClick: this.onBackupClick
+      }, "Create Backup")));
     }
+  }]);
 
-    (0, _createClass3.default)(AdminSettings, [
-      {
-        key: "render",
-        value: function render() {
-          return _react2.default.createElement(
-            _AdminPage2.default,
-            { user: this.props.user },
-            _react2.default.createElement(
-              _AdminPageSection2.default,
-              null,
-              _react2.default.createElement(Header, null, "General"),
-              _react2.default.createElement(
-                _antd.Button,
-                {
-                  loading: this.state.inProgress,
-                  size: "large",
-                  type: "primary",
-                  onClick: this.onBackupClick
-                },
-                "Create Backup"
-              )
-            )
-          );
-        }
-      }
-    ]);
+  return AdminSettings;
+}(_react2.default.Component)) || _class);
 
-    return AdminSettings;
-  })(_react2.default.Component))
-) || _class));
-
-exports.default = function() {
-  return _react2.default.createElement(
-    _ConnectedPage2.default,
-    null,
-    _react2.default.createElement(_ProtectedPage2.default, null, function(
-      _ref
-    ) {
-      var user = _ref.user;
-      return _react2.default.createElement(AdminSettings, { user: user });
-    })
-  );
+exports.default = function () {
+  return _react2.default.createElement(_ConnectedPage2.default, null, _react2.default.createElement(_ProtectedPage2.default, null, function (_ref) {
+    var user = _ref.user;
+    return _react2.default.createElement(AdminSettings, { user: user });
+  }));
 };

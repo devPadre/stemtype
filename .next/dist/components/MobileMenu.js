@@ -30,24 +30,10 @@ var _config2 = _interopRequireDefault(_config);
 
 var _routes = require("../utils/routes");
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(
-    ["\n  margin: 0;\n  padding: 0;\n  list-style: none;\n"],
-    ["\n  margin: 0;\n  padding: 0;\n  list-style: none;\n"]
-  ),
-  _templateObject2 = (0, _taggedTemplateLiteral3.default)(
-    [
-      "\n  margin-bottom: 15px;\n  font-size: 20px;\n  color: ",
-      ";\n\n  a,\n  a:visited {\n    color: inherit;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: color 0.25s ease;\n  }\n"
-    ],
-    [
-      "\n  margin-bottom: 15px;\n  font-size: 20px;\n  color: ",
-      ";\n\n  a,\n  a:visited {\n    color: inherit;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: color 0.25s ease;\n  }\n"
-    ]
-  );
+var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  margin: 0;\n  padding: 0;\n  list-style: none;\n"], ["\n  margin: 0;\n  padding: 0;\n  list-style: none;\n"]),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(["\n  margin-bottom: 15px;\n  font-size: 20px;\n  color: ", ";\n\n  a,\n  a:visited {\n    color: inherit;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: color 0.25s ease;\n  }\n"], ["\n  margin-bottom: 15px;\n  font-size: 20px;\n  color: ", ";\n\n  a,\n  a:visited {\n    color: inherit;\n    text-decoration: none;\n    text-transform: uppercase;\n    transition: color 0.25s ease;\n  }\n"]);
 
 var styles = {
   bmCrossButton: {
@@ -76,50 +62,32 @@ var styles = {
 
 var MenuList = _styledComponents2.default.ul(_templateObject);
 
-var MenuListItem = _styledComponents2.default.li(_templateObject2, function(
-  props
-) {
+var MenuListItem = _styledComponents2.default.li(_templateObject2, function (props) {
   return props.theme.colors.black;
 });
 
-exports.default = function(_ref) {
+exports.default = function (_ref) {
   var pageWrapId = _ref.pageWrapId,
-    outerContainerId = _ref.outerContainerId,
-    isOpen = _ref.isOpen,
-    onStateChange = _ref.onStateChange,
-    lang = _ref.lang;
-  return _react2.default.createElement(
-    _slide2.default,
-    {
-      pageWrapId: pageWrapId,
-      outerContainerId: outerContainerId,
-      styles: styles,
-      customBurgerIcon: false,
-      isOpen: isOpen,
-      onStateChange: onStateChange
-    },
-    _react2.default.createElement(
-      MenuList,
-      null,
-      _config2.default.menu.map(function(_ref2, index) {
-        var text = _ref2.text,
-          route = _ref2.route,
-          params = _ref2.params;
-        return _react2.default.createElement(
-          MenuListItem,
-          { key: index },
-          _react2.default.createElement(
-            _routes.Link,
-            {
-              route: route,
-              params: (0, _extends3.default)({}, params, {
-                lang: lang
-              })
-            },
-            _react2.default.createElement("a", null, text)
-          )
-        );
+      outerContainerId = _ref.outerContainerId,
+      isOpen = _ref.isOpen,
+      onStateChange = _ref.onStateChange,
+      lang = _ref.lang;
+  return _react2.default.createElement(_slide2.default, {
+    pageWrapId: pageWrapId,
+    outerContainerId: outerContainerId,
+    styles: styles,
+    customBurgerIcon: false,
+    isOpen: isOpen,
+    onStateChange: onStateChange
+  }, _react2.default.createElement(MenuList, null, _config2.default.menu.map(function (_ref2, index) {
+    var text = _ref2.text,
+        route = _ref2.route,
+        params = _ref2.params;
+    return _react2.default.createElement(MenuListItem, { key: index }, _react2.default.createElement(_routes.Link, {
+      route: route,
+      params: (0, _extends3.default)({}, params, {
+        lang: lang
       })
-    )
-  );
+    }, _react2.default.createElement("a", null, text)));
+  })));
 };

@@ -27,25 +27,18 @@ var _config = require("./config");
 
 var _config2 = _interopRequireDefault(_config);
 
-function _interopRequireDefault(obj) {
-  return obj && obj.__esModule ? obj : { default: obj };
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var linkify = function linkify(text) {
   return (text || "").toLowerCase().replace(/ /g, "_");
 };
 
 function getPostLink(href) {
-  var currentLang =
-    arguments.length > 1 && arguments[1] !== undefined
-      ? arguments[1]
-      : _config2.default.defaultLanguage;
+  var currentLang = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _config2.default.defaultLanguage;
 
-  var languages = (0, _lodash2.default)(_config2.default.languages).filter(
-    function(language) {
-      return language.id !== _config2.default.defaultLanguage;
-    }
-  );
+  var languages = (0, _lodash2.default)(_config2.default.languages).filter(function (language) {
+    return language.id !== _config2.default.defaultLanguage;
+  });
 
   var linkLanguage = _config2.default.defaultLanguage;
 
@@ -71,22 +64,15 @@ function getPostLink(href) {
 }
 function PostLink(_ref) {
   var href = _ref.href,
-    children = _ref.children,
-    className = _ref.className,
-    prefetch = _ref.prefetch;
+      children = _ref.children,
+      className = _ref.className,
+      prefetch = _ref.prefetch;
 
-  return _react2.default.createElement(
-    _routes.Link,
-    { prefetch: prefetch, href: "/post?fullUrl=" + href, as: href },
-    _react2.default.createElement("a", { className: className }, children)
-  );
+  return _react2.default.createElement(_routes.Link, { prefetch: prefetch, href: "/post?fullUrl=" + href, as: href }, _react2.default.createElement("a", { className: className }, children));
 }
 
 function getTagLink(tag) {
-  var lang =
-    arguments.length > 1 && arguments[1] !== undefined
-      ? arguments[1]
-      : _config2.default.defaultLanguage;
+  var lang = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _config2.default.defaultLanguage;
 
   return {
     route: "tag",
@@ -98,22 +84,15 @@ function getTagLink(tag) {
 }
 function TagLink(_ref2) {
   var tag = _ref2.tag,
-    lang = _ref2.lang,
-    children = _ref2.children,
-    className = _ref2.className;
+      lang = _ref2.lang,
+      children = _ref2.children,
+      className = _ref2.className;
 
-  return _react2.default.createElement(
-    _routes.Link,
-    getTagLink(tag, lang),
-    _react2.default.createElement("a", { className: className }, children)
-  );
+  return _react2.default.createElement(_routes.Link, getTagLink(tag, lang), _react2.default.createElement("a", { className: className }, children));
 }
 
 function getCategoryLink(category) {
-  var lang =
-    arguments.length > 1 && arguments[1] !== undefined
-      ? arguments[1]
-      : _config2.default.defaultLanguage;
+  var lang = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _config2.default.defaultLanguage;
 
   return {
     route: "category",
@@ -125,22 +104,15 @@ function getCategoryLink(category) {
 }
 function CategoryLink(_ref3) {
   var category = _ref3.category,
-    lang = _ref3.lang,
-    children = _ref3.children,
-    className = _ref3.className;
+      lang = _ref3.lang,
+      children = _ref3.children,
+      className = _ref3.className;
 
-  return _react2.default.createElement(
-    _routes.Link,
-    getCategoryLink(category, lang),
-    _react2.default.createElement("a", { className: className }, children)
-  );
+  return _react2.default.createElement(_routes.Link, getCategoryLink(category, lang), _react2.default.createElement("a", { className: className }, children));
 }
 
 function getAuthorLink(author) {
-  var lang =
-    arguments.length > 1 && arguments[1] !== undefined
-      ? arguments[1]
-      : _config2.default.defaultLanguage;
+  var lang = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : _config2.default.defaultLanguage;
 
   return {
     route: "author",
@@ -152,10 +124,7 @@ function getAuthorLink(author) {
 }
 
 function getIndexLink() {
-  var lang =
-    arguments.length > 0 && arguments[0] !== undefined
-      ? arguments[0]
-      : _config2.default.defaultLanguage;
+  var lang = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : _config2.default.defaultLanguage;
 
   return {
     route: "index",
@@ -167,15 +136,11 @@ function getIndexLink() {
 
 function AuthorLink(_ref4) {
   var author = _ref4.author,
-    lang = _ref4.lang,
-    children = _ref4.children,
-    className = _ref4.className;
+      lang = _ref4.lang,
+      children = _ref4.children,
+      className = _ref4.className;
 
-  return _react2.default.createElement(
-    _routes.Link,
-    getAuthorLink(author, lang),
-    _react2.default.createElement("a", { className: className }, children)
-  );
+  return _react2.default.createElement(_routes.Link, getAuthorLink(author, lang), _react2.default.createElement("a", { className: className }, children));
 }
 
 exports.default = {

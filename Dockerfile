@@ -1,28 +1,20 @@
-FROM node:9
+FROM node:9.3.0
 
-ADD yarn.lock /yarn.lock
-ADD pakcage.json /package.json
+RUN mkdir -p /usr/src
+WORKDIR /usr/src
 
-ENV NODE_PATH=/node_modules
-ENV PATH=$PATH:/node_modules/.bin
+# Install app dependencies
+COPY package.json /usr/src/
+COPY package-lock.json /usr/src/
+COPY yarn.lock /usr/src/
+
 RUN yarn
 
-WORKDIR /app
+# Bundle app source
+COPY . /usr/src
 
-ADD . /app
-EXPOSE 3000 
-EXPOSE 35729
+RUN yarn build
 
-ENTRYPOINT ["/bin/bash", "/app/run.sh"]
-CMD ["start"]
+EXPOSE 3000
 
-#install yarn
-RUN npm install -g -s --no-progress yarn && \
-    sudo yarn && \
-    yarn run build && \
-    yarn run prune
-
-
-CMD [ "yarn", "start"]
-
-  
+CMD ["yarn", "start"]

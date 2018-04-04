@@ -19,20 +19,16 @@ module.exports = {
   },
   defaultLanguage: "en",
   disqusShortname: "redcelltalent",
-  menu: [
-    {
-      text: "Home",
-      route: "index"
-    },
-    {
-      text: "Stem Types",
-      route: "stemtype"
-    },
-    {
-      text: "Quiz",
-      route: "quiz"
-    }
-  ],
+  menu: [{
+    text: "Home",
+    route: "index"
+  }, {
+    text: "Stem Types",
+    route: "stemtype"
+  }, {
+    text: "Quiz",
+    route: "quiz"
+  }],
   social: {
     facebook: {
       href: "https://www.facebook.com/stemjobs/",
@@ -63,8 +59,7 @@ module.exports = {
     stemjobs: {
       id: "stemjobs",
       name: "Stem Jobs",
-      description:
-        "STEM Jobs connects today’s students with the in-demand careers of tomorrow in science, technology, engineering and math. We provide comprehensive solutions for teachers to help their pupils realize that STEM exists in everything, particularly in the sports, tech, entertainment and music they consume daily.",
+      description: "STEM Jobs connects today’s students with the in-demand careers of tomorrow in science, technology, engineering and math. We provide comprehensive solutions for teachers to help their pupils realize that STEM exists in everything, particularly in the sports, tech, entertainment and music they consume daily.",
       avatar: "/assets/authors/stemjobs.svg",
       social: {
         facebook: {
@@ -77,5 +72,6 @@ module.exports = {
         }
       }
     }
+
   }
 };

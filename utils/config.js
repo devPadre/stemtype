@@ -73,6 +73,22 @@ module.exports = {
           title: "Instagram"
         }
       }
+    },
+    admin: {
+      id: "admin",
+      name: "Admin",
+      description: "STEM Jobs connects today’s students with the in-demand careers of tomorrow in science, technology, engineering and math. We provide comprehensive solutions for teachers to help their pupils realize that STEM exists in everything, particularly in the sports, tech, entertainment and music they consume daily.",
+      avatar: "/assets/authors/stemjobs.svg",
+      social: {
+        facebook: {
+          href: "https://www.facebook.com/stemjobs",
+          title: "Facebook"
+        },
+        instagram: {
+          href: "https://www.instagram.com/",
+          title: "Instagram"
+        }
+      }
     }
 
   }
