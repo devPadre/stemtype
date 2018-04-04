@@ -7,6 +7,7 @@ import ScrollToTop from "./ScrollToTop";
 import Config from "../utils/config";
 import theme from "../utils/theme";
 import fonts from "../utils/fonts";
+import { initGA, logPageView } from '../utils/analytics';
 
 const Main = styled.main`
   min-height: 90vh;

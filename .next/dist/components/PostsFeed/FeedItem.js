@@ -30,7 +30,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  display: block;\n  width: 100%;\n  text-align: center;\n"], ["\n  display: block;\n  width: 100%;\n  text-align: center;\n"]),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(["\n  margin-top: 10px;\n"], ["\n  margin-top: 10px;\n"]),
-    _templateObject3 = (0, _taggedTemplateLiteral3.default)(["\n  font-size: 15px;\n  font-weight: 400;\n  margin-top: 10px;\n  padding-right: 10px;\n  padding-left: 10px;\n  display: block;\n  text-decoration: none;\n  color: ", ";\n\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  font-size: 15px;\n  font-weight: 400;\n  margin-top: 10px;\n  padding-right: 10px;\n  padding-left: 10px;\n  display: block;\n  text-decoration: none;\n  color: ", ";\n\n  &:hover {\n    text-decoration: underline;\n  }\n"]);
+    _templateObject3 = (0, _taggedTemplateLiteral3.default)(["\n  font-size: 18px;\n  font-weight: 400;\n  margin-top: 10px;\n  padding-right: 10px;\n  padding-left: 10px;\n  display: block;\n  text-decoration: none;\n  color: ", ";\n\n  &:hover {\n    text-decoration: underline;\n  }\n"], ["\n  font-size: 18px;\n  font-weight: 400;\n  margin-top: 10px;\n  padding-right: 10px;\n  padding-left: 10px;\n  display: block;\n  text-decoration: none;\n  color: ", ";\n\n  &:hover {\n    text-decoration: underline;\n  }\n"]);
 
 var FeedItemContainer = _styledComponents2.default.div(_templateObject);
 

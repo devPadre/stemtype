@@ -39,6 +39,22 @@ export function PostLink({ href, children, className, prefetch }) {
     </Link>
   );
 }
+export function getTypeLink(category, lang = Config.defaultLanguage) {
+  return {
+    route: "category",
+    params: {
+      category: linkify(category),
+      lang
+    }
+  };
+}
+export function TypeLink({ category, lang, children, className }) {
+  return (
+    <Link {...getTypeLink(category, lang)}>
+      <a className={className}>{children}</a>
+    </Link>
+  );
+}
 
 export function getTagLink(tag, lang = Config.defaultLanguage) {
   return {
@@ -105,6 +121,6 @@ export default {
   PostLink,
   TagLink,
   CategoryLink,
-
+  TypeLink,
   AuthorLink
 };

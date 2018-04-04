@@ -45,6 +45,14 @@ class MetaEditor extends React.Component {
                   })(<Input placeholder="Article url" />)}
                 </Form.Item>
               </Col>
+              <Col xs={24}>
+                <Form.Item label="TypeUrl">
+                  {getFieldDecorator("typeurl", {
+                    initialValue: initialValues.typeurl || "",
+                    rules: [{ required: true, message: "Type Url is required" }]
+                  })(<Input placeholder="Type url" />)}
+                </Form.Item>
+              </Col>
               <Col xs={24} sm={11}>
                 <Form.Item label="Language">
                   {getFieldDecorator("language", {

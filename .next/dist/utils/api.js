@@ -52,6 +52,7 @@ function convertPostContentResponseToPost(json) {
     thumbImage: metaFields.thumbImage ? metaFields.thumbImage.stringValue : "",
     thumbText: metaFields.thumbText ? metaFields.thumbText.stringValue : "",
     fullscreenVideo: metaFields.fullscreenVideo ? metaFields.fullscreenVideo.stringValue : "",
+    typeurl: metaFields.typeurl ? metaFields.typeurl.stringValue : "",
     url: metaFields.url ? metaFields.url.stringValue : ""
   };
 }

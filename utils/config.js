@@ -1,5 +1,5 @@
 module.exports = {
-  baseUrl: "https://navy.stemtype.com",
+  baseUrl: "http://navy.stemjobs.com",
   siteTitle: "Stem Type",
   description: "Stem Type quiz and content system with NextJS and Firestore",
   copyright: "Redcell Talent | Powered by Redcell Talent",

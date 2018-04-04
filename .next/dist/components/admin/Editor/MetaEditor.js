@@ -84,7 +84,10 @@ var MetaEditor = (_dec = (0, _mobxReact.inject)("blog"), _dec(_class = (0, _mobx
       return _react2.default.createElement(StyledForm, { layout: "vertical", onSubmit: this.onFormSubmit }, _react2.default.createElement(_antd.Collapse, { accordion: true, bordered: false, defaultActiveKey: ["main"] }, _react2.default.createElement(_antd.Collapse.Panel, { header: "Main Settings", key: "main" }, _react2.default.createElement(_antd.Row, null, _react2.default.createElement(_antd.Col, { xs: 24 }, _react2.default.createElement(_antd.Form.Item, { label: "Url" }, getFieldDecorator("url", {
         initialValue: initialValues.url || "",
         rules: [{ required: true, message: "Url is required" }]
-      })(_react2.default.createElement(_antd.Input, { placeholder: "Article url" })))), _react2.default.createElement(_antd.Col, { xs: 24, sm: 11 }, _react2.default.createElement(_antd.Form.Item, { label: "Language" }, getFieldDecorator("language", {
+      })(_react2.default.createElement(_antd.Input, { placeholder: "Article url" })))), _react2.default.createElement(_antd.Col, { xs: 24 }, _react2.default.createElement(_antd.Form.Item, { label: "TypeUrl" }, getFieldDecorator("typeurl", {
+        initialValue: initialValues.typeurl || "",
+        rules: [{ required: true, message: "Type Url is required" }]
+      })(_react2.default.createElement(_antd.Input, { placeholder: "Type url" })))), _react2.default.createElement(_antd.Col, { xs: 24, sm: 11 }, _react2.default.createElement(_antd.Form.Item, { label: "Language" }, getFieldDecorator("language", {
         initialValue: initialValues.language,
         rules: [{ required: true, message: "Please select a language" }]
       })(_react2.default.createElement(_antd.Select, { placeholder: "Select a language" }, languages.map(function (language) {

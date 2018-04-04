@@ -4,7 +4,7 @@ import { CategoryLink } from "../utils/links";
 export default styled(CategoryLink)`
   display: inline-block;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   cursor: pointer;
   transition: color 0.25s ease;
   text-decoration: underline;

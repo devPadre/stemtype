@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Config from "../utils/config";
+import { initGA, logPageView } from '../utils/analytics'
 
 function CustomHead(props) {
   const { url, type, image, video } = props;
@@ -10,6 +11,7 @@ function CustomHead(props) {
   const description = props.description
     ? props.description
     : Config.description;
+    
   return (
     <Head>
       <title>{title}</title>

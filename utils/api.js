@@ -33,6 +33,7 @@ function convertPostContentResponseToPost(json, name = "published") {
     fullscreenVideo: metaFields.fullscreenVideo
       ? metaFields.fullscreenVideo.stringValue
       : "",
+    typeurl: metaFields.typeurl ? metaFields.typeurl.stringValue : "",
     url: metaFields.url ? metaFields.url.stringValue : ""
   };
 }

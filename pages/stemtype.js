@@ -7,7 +7,7 @@ import LogoBanner from "../components/LogoBanner";
 import SidebarBlock from "../components/Sidebar/SidebarBlock";
 import TagsCloud from "../components/Sidebar/TagsCloud";
 import { getTags } from "../utils/content";
-import PostsFeed from "../components/PostsFeed";
+import TypesFeed from "../components/TypesFeed";
 import LanguageSelector from "../components/LanguageSelector";
 import { getIndexLink } from "../utils/links";
 import LazyPostsFetcher from "./_hocs/LazyPostsFetcher";
@@ -58,8 +58,8 @@ class StemType extends React.Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} sm={12} md={12}>
-              <PostsFeed posts={posts} featured={false} />
+            <Col xs={12} sm={12} md={12} style={{ paddingbottom: 40 }}>
+              <TypesFeed posts={posts} featured={false} />
             </Col>
           </Row>
         </Grid>

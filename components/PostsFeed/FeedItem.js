@@ -15,7 +15,7 @@ const CategoryLinkWrapper = styled.div`
 `;
 
 const ItemTitle = styled(PostLink)`
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   margin-top: 10px;
   padding-right: 10px;

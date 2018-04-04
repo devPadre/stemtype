@@ -64,6 +64,8 @@ var _fonts = require("../utils/fonts");
 
 var _fonts2 = _interopRequireDefault(_fonts);
 
+var _analytics = require("../utils/analytics");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  min-height: 90vh;\n"], ["\n  min-height: 90vh;\n"]);

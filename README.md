@@ -149,20 +149,29 @@ See [LICENSE](./LICENSE) for more information.
 
 ## Docker
 
+Docker Build with multiple tags:
+```
+docker build -t navy-stem-type:v1b -t us.gcr.io/stem-type-navy/navy-stem-type:v1 -t devpadre/navy-stem-type:v1 .
+```
+
 ### Run Local
 ```
 docker run -d --restart=always -p 3000:3000 your-app:tag
 ```
 This will run the container accessible at localhost:3000
 
+```
 docker images
 docker tag bf92d6aa7b60 devpadre/navy-stem-type:latest
 docker push devpadre/navy-stem-type
-
+```
 ### Push to Google Cloud
+[gcloud push-pull](https://cloud.google.com/container-registry/docs/pushing-and-pulling)
+```
 gcloud projects list
 
 gcloud beta auth configure-docker
+```
  - only need to run gcloud auth once
 
 Tag the local container with google's repository (for US use. us.gcr.io) then project name then what you want it to be called with a tagged version
@@ -171,11 +180,12 @@ docker tag navy-stem-type us.gcr.io/stem-type-navy/navy-stem-type:v1
 
 docker push us.gcr.io/stem-type-navy/navy-stem-type:latest
 
-gcloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type:latest
+gcloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type
 ```
 
 Create Container clusters - may have to use init if you have not initialized your project correctly
 ```
+
 gcloud init
 
 gcloud container clusters create navy-stem-type --num-nodes=3
@@ -190,4 +200,45 @@ kubectl run navy-stem-type --image=us.gcr.io/stem-type-navy/navy-stem-type --por
 kubectl expose deployment navy-stem-type  --type=LoadBalancer --port 80 --target-port 3000
 
 kubectl get service
+```
+
+
+## Docker Commit
+
+```
+docker commit -m "Changed stemtype page to allow for 8 posts" -a "devPadre" 4b121bdf4145 navy-stem-type:v1
+
+docker tag navy-stem-type devpadre/navy-stem-type:v1
+
+docker push devpadre/navy-stem-type:v1
+```
+
+## Rolling Update
+
+[Google Link](https://cloud.google.com/kubernetes-engine/docs/how-to/updating-apps)
+
+Inspecting a rollout with kubectl rollout status
+You can inspect the status of a rollout using the kubectl rollout status command.
+
+For example, you can inspect the nginx Deployment's rollout by running the following command:
+```
+kubectl rollout status deployment navy-stem-type
+```
+after pushing the update:
+```
+docker push us.gcr.io/stem-type-navy/navy-stem-type:v1
+```
+You can use the Google Cloud interface to push a rolling update
+
+* Kubernetes
+* --> workload
+* Select the instance name "navy-stem-type"
+* --> actions from top nav
+* Rolling update
+* update the image name with new tag info from the repository
+
+Check to ensure that your new image shows up in the list-tag digest
+```
+cloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type
+```
 
