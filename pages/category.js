@@ -12,6 +12,7 @@ import PostsFeed from "../components/PostsFeed";
 import LanguageSelector from "../components/LanguageSelector";
 import LazyPostsFetcher from "./_hocs/LazyPostsFetcher";
 import Hr from "../components/Hr";
+import Layout from '../components/layout';
 
 const Header = styled.div`
   text-align: center;
@@ -35,35 +36,37 @@ class CategoryPage extends React.Component {
     const { lang } = this.props;
     const posts = postsByCategory(this.props.posts, category);
     return (
-      <Page lang={lang}>
-        <CustomHead />
-        <LogoBanner lang={lang} />
-        <Hr />
-        <div style={{ padding: 20 }}>
-        </div>
-        <Grid style={{ overflow: "hidden" }}>
-          <Row>
-            <Col xs={12}>
-              <Header>
-                <h2>Browsing by STEM Type</h2>
-                <h1>{category}</h1>
-              </Header>
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={12} md={9}>
-              <PostsFeed posts={posts} featured={false} />
-            </Col>
-            <Col xs={false} sm={false} md={3}>
-              <div style={{ paddingLeft: 20 }}>
-                <SidebarBlock title="Tags">
-                  <TagsCloud tags={getTags(posts)} lang={lang} />
-                </SidebarBlock>
-              </div>
-            </Col>
-          </Row>
-        </Grid>
-      </Page>
+      <Layout>  
+        <Page lang={lang}>
+          <CustomHead />
+          <LogoBanner lang={lang} />
+          <Hr />
+          <div style={{ padding: 20 }}>
+          </div>
+          <Grid style={{ overflow: "hidden" }}>
+            <Row>
+              <Col xs={12}>
+                <Header>
+                  <h2>Browsing by STEM Type</h2>
+                  <h1>{category}</h1>
+                </Header>
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={9}>
+                <PostsFeed posts={posts} featured={false} />
+              </Col>
+              <Col xs={false} sm={false} md={3}>
+                <div style={{ paddingLeft: 20 }}>
+                  <SidebarBlock title="Tags">
+                    <TagsCloud tags={getTags(posts)} lang={lang} />
+                  </SidebarBlock>
+                </div>
+              </Col>
+            </Row>
+          </Grid>
+        </Page>
+      </Layout>  
     );
   }
 }

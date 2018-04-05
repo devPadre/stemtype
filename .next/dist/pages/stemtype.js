@@ -90,6 +90,10 @@ var _StemBanner = require("../components/StemBanner");
 
 var _StemBanner2 = _interopRequireDefault(_StemBanner);
 
+var _layout = require("../components/layout");
+
+var _layout2 = _interopRequireDefault(_layout);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"], ["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n    text-transform: uppercase;\n  }\n"]);
@@ -120,7 +124,7 @@ var StemType = function (_React$Component) {
       var authorInfo = _config2.default.authors[stemjobs];
       var stemjobs = _config2.default.authors[stemjobs];
 
-      return _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, lg: 10, lgOffset: 1, style: { padding: 0 } }, _react2.default.createElement(_StemBanner2.default, null), _react2.default.createElement(Header, { style: { paddingbottom: 20 } }, _react2.default.createElement("h2", null, "Explore Jobs Connected with each STEM Type"), _react2.default.createElement("div", { style: { paddingBottom: "5%" } }))), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 })), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 12, style: { paddingbottom: 40 } }, _react2.default.createElement(_TypesFeed2.default, { posts: posts, featured: false })))));
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, lg: 10, lgOffset: 1, style: { padding: 0 } }, _react2.default.createElement(_StemBanner2.default, null), _react2.default.createElement(Header, { style: { paddingbottom: 20 } }, _react2.default.createElement("h2", null, "Explore Jobs Connected with each STEM Type"), _react2.default.createElement("div", { style: { paddingBottom: "5%" } }))), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 })), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 12, style: { paddingbottom: 40 } }, _react2.default.createElement(_TypesFeed2.default, { posts: posts, featured: false }))))));
     }
   }]);
 

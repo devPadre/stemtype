@@ -74,6 +74,10 @@ var _LazyPostsFetcher = require("./_hocs/LazyPostsFetcher");
 
 var _LazyPostsFetcher2 = _interopRequireDefault(_LazyPostsFetcher);
 
+var _layout = require("../components/layout");
+
+var _layout2 = _interopRequireDefault(_layout);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n  }\n"], ["\n  text-align: center;\n  display: block;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 40px;\n  }\n"]);
@@ -96,12 +100,12 @@ var TagPage = function (_React$Component) {
       var tag = this.props.url.query.tag;
 
       var posts = (0, _content.postsByTag)(this.props.posts, tag, lang);
-      return _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_LanguageSelector2.default, {
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_LanguageSelector2.default, {
         current: lang,
         getLink: function getLink(language) {
           return (0, _links.getTagLink)(tag, language.id);
         }
-      }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 }, _react2.default.createElement(Header, null, _react2.default.createElement("h2", null, "Browsing by tag"), _react2.default.createElement("h1", null, "#", tag)))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_PostsFeed2.default, { posts: posts, featured: false })), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: false, sm: false, md: 3 }, _react2.default.createElement("div", { style: { paddingLeft: 20 } }, _react2.default.createElement(_SidebarBlock2.default, { title: "Tags" }, _react2.default.createElement(_TagsCloud2.default, { tags: (0, _content.getTags)(posts), lang: lang })))))));
+      }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 }, _react2.default.createElement(Header, null, _react2.default.createElement("h2", null, "Browsing by tag"), _react2.default.createElement("h1", null, "#", tag)))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_PostsFeed2.default, { posts: posts, featured: false })), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: false, sm: false, md: 3 }, _react2.default.createElement("div", { style: { paddingLeft: 20 } }, _react2.default.createElement(_SidebarBlock2.default, { title: "Tags" }, _react2.default.createElement(_TagsCloud2.default, { tags: (0, _content.getTags)(posts), lang: lang }))))))));
     }
   }]);
 

@@ -56,8 +56,8 @@ var DescriptionColumnInner = _styledComponents2.default.div(_templateObject4, fu
 
 var PostTitleLink = (0, _styledComponents2.default)(_links.PostLink)(_templateObject5);
 
-function FeedItem(props) {
+function FeedItemFeatured(props) {
   return _react2.default.createElement(FeedItemContainer, null, _react2.default.createElement(ImageColumn, { even: props.even }, _react2.default.createElement(_links.PostLink, { href: props.href }, _react2.default.createElement(_FeedItemImage2.default, { featured: true, src: props.image, lazy: props.lazy }), _react2.default.createElement("span", { style: { display: "none" } }, props.title))), _react2.default.createElement(DescriptionColumn, null, _react2.default.createElement(DescriptionColumnInner, null, _react2.default.createElement(_CategoryLink2.default, { category: props.category }, props.category), _react2.default.createElement(PostTitleLink, { prefetch: true, href: props.href }, props.title), props.text && _react2.default.createElement("p", null, props.text))));
 }
 
-exports.default = FeedItem;
+exports.default = FeedItemFeatured;

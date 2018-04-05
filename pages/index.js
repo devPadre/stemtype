@@ -17,6 +17,7 @@ import Hr from "../components/Hr";
 import Config from "../utils/config";
 import SocialLink from "../components/SocialLink";
 import Link from 'next/link';
+import Layout from '../components/layout';
 
 
 
@@ -46,51 +47,53 @@ class Index extends React.Component {
   render() {
     const { lang, posts, hasMore, onLoadMore } = this.props;
     return (
-      <Page lang={lang}>
-        <CustomHead />
-        <LogoBanner lang={lang} />
-        <Header> 
-          <h1>Welcome to the Stem Type™ Navigator</h1>
-              <Col xs={12} sm={12} md={12}>
-              <Link href="/quiz">
-                <a><LinkButton
-                  title={"Find Your Stem Type™"}
-                />
-                </a>
-                </Link>
-              </Col>
-          <h3>STEM Type™ connects your passions and dreams</h3>
-          <h3> to the right opportunities so that you can find career success! </h3>
-        <Hr />
-        </Header>
-        <div style={{ padding: 20 }}>
-        </div>
-        <Grid style={{ overflow: "hidden" }}>
-          <Row>
-            <Col xs={12} sm={12} md={9}>
-              <PostsFeed posts={posts} />
-            </Col>
-            <Col xs={false} sm={false} md={3}>
-              <div style={{ paddingLeft: 20 }}>
-                <SidebarBlock title="Tags">
-                  <TagsCloud tags={getTags(posts)} lang={lang} />
-                </SidebarBlock>
-              </div>
-            </Col>
-          </Row>
-          {hasMore && (
+       <Layout> 
+        <Page lang={lang}>
+          <CustomHead />
+          <LogoBanner lang={lang} />
+          <Header> 
+            <h1>Welcome to the Stem Type™ Navigator</h1>
+                <Col xs={12} sm={12} md={12}>
+                <Link href="/quiz">
+                  <a><LinkButton
+                    title={"Find Your Stem Type™"}
+                  />
+                  </a>
+                  </Link>
+                </Col>
+            <h3>STEM Type™ connects your passions and dreams</h3>
+            <h3> to the right opportunities so that you can find career success! </h3>
+          <Hr />
+          </Header>
+          <div style={{ padding: 20 }}>
+          </div>
+          <Grid style={{ overflow: "hidden" }}>
             <Row>
               <Col xs={12} sm={12} md={9}>
-                <LoadMoreButton
-                  onClick={onLoadMore}
-                  title={"Load more careers"}
-                />
-
+                <PostsFeed posts={posts} />
+              </Col>
+              <Col xs={false} sm={false} md={3}>
+                <div style={{ paddingLeft: 20 }}>
+                  <SidebarBlock title="Tags">
+                    <TagsCloud tags={getTags(posts)} lang={lang} />
+                  </SidebarBlock>
+                </div>
               </Col>
             </Row>
-          )}
-        </Grid>
-      </Page>
+            {hasMore && (
+              <Row>
+                <Col xs={12} sm={12} md={9}>
+                  <LoadMoreButton
+                    onClick={onLoadMore}
+                    title={"Load more careers"}
+                  />
+
+                </Col>
+              </Row>
+            )}
+          </Grid>
+        </Page>
+       </Layout> 
     );
   }
 }

@@ -16,6 +16,7 @@ import LoadMoreButton from "../components/LoadMoreButton";
 import Media from "../utils/media";
 import Config from "../utils/config";
 import StemBanner from "../components/StemBanner";
+import Layout from '../components/layout';
 
 
 const Header = styled.div`
@@ -41,29 +42,31 @@ class StemType extends React.Component {
     const stemjobs = Config.authors[stemjobs];
 
     return (
-      <Page lang={lang}>
-        <CustomHead />
-          <LogoBanner lang={lang} />
-        <Grid style={{ overflow: "hidden" }}>
-          <Row>
-            <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
-            <StemBanner />
-            <Header style={{ paddingbottom: 20 }}>  
-            <h2>Explore Jobs Connected with each STEM Type</h2>
-            <div style={{ paddingBottom: "5%" }} />
-            </Header>
+      <Layout>
+        <Page lang={lang}>
+          <CustomHead />
+            <LogoBanner lang={lang} />
+          <Grid style={{ overflow: "hidden" }}>
+            <Row>
+              <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
+              <StemBanner />
+              <Header style={{ paddingbottom: 20 }}>  
+              <h2>Explore Jobs Connected with each STEM Type</h2>
+              <div style={{ paddingBottom: "5%" }} />
+              </Header>
+                </Col>
+              <Col xs={12}>
+                
               </Col>
-            <Col xs={12}>
-              
-            </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={12} md={12} style={{ paddingbottom: 40 }}>
-              <TypesFeed posts={posts} featured={false} />
-            </Col>
-          </Row>
-        </Grid>
-      </Page>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12} style={{ paddingbottom: 40 }}>
+                <TypesFeed posts={posts} featured={false} />
+              </Col>
+            </Row>
+          </Grid>
+        </Page>
+      </Layout>
     );
   }
 }

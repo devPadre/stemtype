@@ -98,6 +98,10 @@ var _link = require("next/dist/lib/link.js");
 
 var _link2 = _interopRequireDefault(_link);
 
+var _layout = require("../components/layout");
+
+var _layout2 = _interopRequireDefault(_layout);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(["\n  text-align: center;\n  display: block;\n  padding: 15px;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h3 {\n    margin-top: 0;\n    margin-bottom: 6px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 30px;\n    text-transform: uppercase;\n  }\n"], ["\n  text-align: center;\n  display: block;\n  padding: 15px;\n\n  h2 {\n    margin-top: 0;\n    margin-bottom: 10px;\n  }\n\n  h3 {\n    margin-top: 0;\n    margin-bottom: 6px;\n  }\n\n  h1 {\n    margin-top: 10px;\n    margin-bottom: 30px;\n    text-transform: uppercase;\n  }\n"]);
@@ -122,12 +126,12 @@ var Index = function (_React$Component) {
           hasMore = _props.hasMore,
           onLoadMore = _props.onLoadMore;
 
-      return _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(Header, null, _react2.default.createElement("h1", null, "Welcome to the Stem Type\u2122 Navigator"), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 12 }, _react2.default.createElement(_link2.default, { href: "/quiz" }, _react2.default.createElement("a", null, _react2.default.createElement(_LinkButton2.default, {
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(Header, null, _react2.default.createElement("h1", null, "Welcome to the Stem Type\u2122 Navigator"), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 12 }, _react2.default.createElement(_link2.default, { href: "/quiz" }, _react2.default.createElement("a", null, _react2.default.createElement(_LinkButton2.default, {
         title: "Find Your Stem Type™"
       })))), _react2.default.createElement("h3", null, "STEM Type\u2122 connects your passions and dreams"), _react2.default.createElement("h3", null, " to the right opportunities so that you can find career success! "), _react2.default.createElement(_Hr2.default, null)), _react2.default.createElement("div", { style: { padding: 20 } }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_PostsFeed2.default, { posts: posts })), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: false, sm: false, md: 3 }, _react2.default.createElement("div", { style: { paddingLeft: 20 } }, _react2.default.createElement(_SidebarBlock2.default, { title: "Tags" }, _react2.default.createElement(_TagsCloud2.default, { tags: (0, _content.getTags)(posts), lang: lang }))))), hasMore && _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_LoadMoreButton2.default, {
         onClick: onLoadMore,
         title: "Load more careers"
-      })))));
+      }))))));
     }
   }]);
 

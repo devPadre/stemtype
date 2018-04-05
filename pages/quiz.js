@@ -17,6 +17,7 @@ import QuizEmbed from "../components/QuizEmbed";
 import Media from "../utils/media";
 import Config from "../utils/config";
 import StemBanner from "../components/StemBanner";
+import Layout from '../components/layout';
 
 
 const Header = styled.div`
@@ -42,26 +43,28 @@ class Quiz extends React.Component {
     const stemjobs = Config.authors[stemjobs];
 
     return (
-      <Page lang={lang}>
-        <CustomHead />
-          <LogoBanner lang={lang} />
-        <Grid style={{ overflow: "hidden" }}>
-          <Row>
-            <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
-            <StemBanner />
-            <Header style={{ paddingbottom: "5px" }}>  
-            <h2>Welcome to the STEM Type Quiz!</h2>
-            <div style={{ paddingBottom: "5px" }} />
-            </Header>
+       <Layout> 
+        <Page lang={lang}>
+          <CustomHead />
+            <LogoBanner lang={lang} />
+          <Grid style={{ overflow: "hidden" }}>
+            <Row>
+              <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
+              <StemBanner />
+              <Header style={{ paddingbottom: "5px" }}>  
+              <h2>Welcome to the STEM Type Quiz!</h2>
+              <div style={{ paddingBottom: "5px" }} />
+              </Header>
+                </Col>
+            </Row>
+            <Row>
+              <Col xs={12} sm={12} md={12}>
+                <QuizEmbed />
               </Col>
-          </Row>
-          <Row>
-            <Col xs={12} sm={12} md={12}>
-              <QuizEmbed />
-            </Col>
-          </Row>
-        </Grid>
-      </Page>
+            </Row>
+          </Grid>
+        </Page>
+       </Layout> 
     );
   }
 }

@@ -8,6 +8,7 @@ import { getPostLink } from "../utils/links";
 import LanguageSelector from "../components/LanguageSelector";
 import NextError from "next/error";
 import * as Api from "../utils/api";
+import Layout from '../components/layout';
 
 export default class PostPage extends React.Component {
   static async getInitialProps({ query }) {
@@ -22,24 +23,26 @@ export default class PostPage extends React.Component {
       return <NextError statusCode={404} />;
     }
     return (
-      <Page lang={"en"}>
-        <CustomHead
-          title={post.title}
-          image={post.ogImage}
-          video={post.ogVideo}
-          description={post.thumbText}
-          type="article"
-          url={`${Config.baseUrl}${post.url}`}
-        />
-        <LogoBanner lang={"en"} />
-        {post.hasTranslation && (
-          <LanguageSelector
-            current={post.language}
-            getLink={(language) => getPostLink(fullUrl, language.id)}
+       <Layout> 
+        <Page lang={"en"}>
+          <CustomHead
+            title={post.title}
+            image={post.ogImage}
+            video={post.ogVideo}
+            description={post.thumbText}
+            type="article"
+            url={`${Config.baseUrl}${post.url}`}
           />
-        )}
-        <Post post={post} />
-      </Page>
+          <LogoBanner lang={"en"} />
+          {post.hasTranslation && (
+            <LanguageSelector
+              current={post.language}
+              getLink={(language) => getPostLink(fullUrl, language.id)}
+            />
+          )}
+          <Post post={post} />
+        </Page>
+       </Layout> 
     );
   }
 }

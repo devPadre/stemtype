@@ -11,6 +11,7 @@ import { getTagLink } from "../utils/links";
 import PostsFeed from "../components/PostsFeed";
 import LanguageSelector from "../components/LanguageSelector";
 import LazyPostsFetcher from "./_hocs/LazyPostsFetcher";
+import Layout from '../components/layout';
 
 const Header = styled.div`
   text-align: center;
@@ -33,6 +34,7 @@ class TagPage extends React.Component {
     const { tag } = this.props.url.query;
     const posts = postsByTag(this.props.posts, tag, lang);
     return (
+    <Layout>  
       <Page lang={lang}>
         <CustomHead />
         <LogoBanner lang={lang} />
@@ -63,6 +65,7 @@ class TagPage extends React.Component {
           </Row>
         </Grid>
       </Page>
+    </Layout>
     );
   }
 }

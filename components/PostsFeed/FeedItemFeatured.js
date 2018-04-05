@@ -78,7 +78,7 @@ const PostTitleLink = styled(PostLink)`
   }
 `;
 
-function FeedItem(props) {
+function FeedItemFeatured(props) {
   return (
     <FeedItemContainer>
       <ImageColumn even={props.even}>
@@ -102,4 +102,4 @@ function FeedItem(props) {
   );
 }
 
-export default FeedItem;
+export default FeedItemFeatured;

@@ -71,6 +71,10 @@ var _api = require("../utils/api");
 
 var Api = _interopRequireWildcard(_api);
 
+var _layout = require("../components/layout");
+
+var _layout2 = _interopRequireDefault(_layout);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -94,7 +98,7 @@ var PostPage = function (_React$Component) {
       if (!post) {
         return _react2.default.createElement(_error2.default, { statusCode: 404 });
       }
-      return _react2.default.createElement(_Page2.default, { lang: "en" }, _react2.default.createElement(_CustomHead2.default, {
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: "en" }, _react2.default.createElement(_CustomHead2.default, {
         title: post.title,
         image: post.ogImage,
         video: post.ogVideo,
@@ -106,7 +110,7 @@ var PostPage = function (_React$Component) {
         getLink: function getLink(language) {
           return (0, _links.getPostLink)(fullUrl, language.id);
         }
-      }), _react2.default.createElement(_Post2.default, { post: post }));
+      }), _react2.default.createElement(_Post2.default, { post: post })));
     }
   }], [{
     key: "getInitialProps",
