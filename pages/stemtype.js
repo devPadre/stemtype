@@ -49,7 +49,7 @@ class StemType extends React.Component {
             <Col xs={12} lg={10} lgOffset={1} style={{ padding: 0 }}>
             <StemBanner />
             <Header style={{ paddingbottom: 20 }}>  
-            <h2>Explore Jobs Connected with each STEM TYPE</h2>
+            <h2>Explore Jobs Connected with each STEM Type</h2>
             <div style={{ paddingBottom: "5%" }} />
             </Header>
               </Col>

@@ -13,17 +13,19 @@ class QuizEmbed extends Component {
  
   render() {
     const divStyle = {
-          maxWidth: "85",
+          maxWidth: "100%",
           margin: "0 auto 0 auto",
           leftmargin: "10px",
           rightmargin: "10px",
-          width: "80%",
-          height: "425px"
+          width: "90%",
+          height: "500px"
         };
  
     const iframeStyle = {
+          overflow: "hidden",
+          position: "relative",
           width: "100%",
-          height: "80%",
+          height: "100%",
           border: "none"
         };
  
@@ -34,7 +36,7 @@ class QuizEmbed extends Component {
     return (
       <div className="QuizEmbed">
         <div className="gizmo_target" data-rid-id={gizmoID} data-fg="#252525" data-bg="#EDEDED" style={divStyle} data-auto-scroll="true">
-          <iframe title="embed-test" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms"></iframe>
+          <iframe title="stem-type" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms"></iframe>
         </div>
       </div>
     );

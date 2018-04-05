@@ -45,7 +45,7 @@ class CategoryPage extends React.Component {
           <Row>
             <Col xs={12}>
               <Header>
-                <h2>Browsing by Stem Type</h2>
+                <h2>Browsing by STEM Type</h2>
                 <h1>{category}</h1>
               </Header>
             </Col>

@@ -190,7 +190,7 @@ gcloud init
 
 gcloud container clusters create navy-stem-type --num-nodes=3
 
-gcloud container clusters get-credentials navy-stem-type --zone northamerica-northeast1-b --project stem-type-navy
+gcloud container clusters get-credentials navy-stem-type --zone us-east1-b --project stem-type-navy
 ```
 Run and Expose your deployment to the internet
 
@@ -242,3 +242,6 @@ Check to ensure that your new image shows up in the list-tag digest
 cloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type
 ```
 
+## Migrate or Update Node Pool
+
+[link](https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool)
