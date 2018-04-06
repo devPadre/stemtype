@@ -22,7 +22,6 @@ class QuizEmbed extends Component {
         };
  
     const iframeStyle = {
-          overflow: "hidden",
           position: "relative",
           width: "100%",
           height: "100%",

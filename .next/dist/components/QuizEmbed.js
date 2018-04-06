@@ -62,7 +62,6 @@ var QuizEmbed = function (_Component) {
       };
 
       var iframeStyle = {
-        overflow: "hidden",
         position: "relative",
         width: "100%",
         height: "100%",
