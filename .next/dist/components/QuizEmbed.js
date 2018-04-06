@@ -73,7 +73,7 @@ var QuizEmbed = function (_Component) {
       var surveyID = "STEM-Type-Quiz";
       var gizmoUrl = "https://www.surveygizmo.com/s3/" + gizmoID + '/' + surveyID;
 
-      return _react2.default.createElement("div", { className: "QuizEmbed" }, _react2.default.createElement("div", { className: "gizmo_target", "data-rid-id": gizmoID, "data-fg": "#252525", "data-bg": "#EDEDED", style: divStyle, "data-auto-scroll": "true" }, _react2.default.createElement("iframe", { title: "stem-type", style: iframeStyle, src: gizmoUrl, sandbox: "allow-top-navigation allow-scripts allow-forms" })));
+      return _react2.default.createElement("div", { className: "QuizEmbed" }, _react2.default.createElement("div", { className: "gizmo_target", "data-rid-id": gizmoID, "data-fg": "#252525", "data-bg": "#EDEDED", style: divStyle, "data-auto-scroll": "true" }, _react2.default.createElement("iframe", { title: "stem-type", style: iframeStyle, src: gizmoUrl, sandbox: "allow-top-navigation allow-scripts allow-forms allow-popups" })));
     }
   }]);
 
