@@ -36,7 +36,7 @@ class QuizEmbed extends Component {
     return (
       <div className="QuizEmbed">
         <div className="gizmo_target" data-rid-id={gizmoID} data-fg="#252525" data-bg="#EDEDED" style={divStyle} data-auto-scroll="true">
-          <iframe title="stem-type" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms"></iframe>
+          <iframe title="stem-type" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms allow-popups"></iframe>
         </div>
       </div>
     );
