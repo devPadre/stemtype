@@ -13,6 +13,7 @@ const Button = styled.button`
   padding: 16px 48px;
   border: 1px solid #ebebeb;
   color: #454545;
+  background: #88c53f;
   font-size: 11px;
   text-transform: uppercase;
   font-weight: 400;

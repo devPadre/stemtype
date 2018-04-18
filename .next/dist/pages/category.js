@@ -66,6 +66,14 @@ var _PostsFeed = require("../components/PostsFeed");
 
 var _PostsFeed2 = _interopRequireDefault(_PostsFeed);
 
+var _error = require("next/dist/lib/error.js");
+
+var _error2 = _interopRequireDefault(_error);
+
+var _PostCategory = require("../components/Post/PostCategory");
+
+var _PostCategory2 = _interopRequireDefault(_PostCategory);
+
 var _LanguageSelector = require("../components/LanguageSelector");
 
 var _LanguageSelector2 = _interopRequireDefault(_LanguageSelector);
@@ -81,6 +89,10 @@ var _Hr2 = _interopRequireDefault(_Hr);
 var _layout = require("../components/layout");
 
 var _layout2 = _interopRequireDefault(_layout);
+
+var _config = require("../utils/config");
+
+var _config2 = _interopRequireDefault(_config);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -103,8 +115,14 @@ var CategoryPage = function (_React$Component) {
       var category = this.props.url.query.category;
       var lang = this.props.lang;
 
+      if (!(category && _config2.default.categories[category])) {
+        return _react2.default.createElement(_error2.default, { statusCode: 404 });
+      }
       var posts = (0, _content.postsByCategory)(this.props.posts, category);
-      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_Hr2.default, null), _react2.default.createElement("div", { style: { padding: 20 } }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 }, _react2.default.createElement(Header, null, _react2.default.createElement("h2", null, "Browsing by STEM Type"), _react2.default.createElement("h1", null, category)))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_PostsFeed2.default, { posts: posts, featured: false })), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: false, sm: false, md: 3 }, _react2.default.createElement("div", { style: { paddingLeft: 20 } }, _react2.default.createElement(_SidebarBlock2.default, { title: "Tags" }, _react2.default.createElement(_TagsCloud2.default, { tags: (0, _content.getTags)(posts), lang: lang }))))))));
+      return _react2.default.createElement(_layout2.default, null, _react2.default.createElement(_Page2.default, { lang: lang }, _react2.default.createElement(_CustomHead2.default, null), _react2.default.createElement(_LogoBanner2.default, { lang: lang }), _react2.default.createElement(_reactStyledFlexboxgrid.Grid, { style: { overflow: "hidden" } }, _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12 }, _react2.default.createElement(Header, null, _react2.default.createElement(_PostCategory2.default, {
+        category: category,
+        categoryInfo: _config2.default.categories[category]
+      }), _react2.default.createElement("div", { style: { padding: 20 } })))), _react2.default.createElement(_reactStyledFlexboxgrid.Row, null, _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: 12, sm: 12, md: 9 }, _react2.default.createElement(_PostsFeed2.default, { posts: posts, featured: false })), _react2.default.createElement(_reactStyledFlexboxgrid.Col, { xs: false, sm: false, md: 3 }, _react2.default.createElement("div", { style: { paddingLeft: 20 } }, _react2.default.createElement(_SidebarBlock2.default, { title: "Tags" }, _react2.default.createElement(_TagsCloud2.default, { tags: (0, _content.getTags)(posts), lang: lang }))))))));
     }
   }]);
 

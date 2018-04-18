@@ -242,6 +242,14 @@ Check to ensure that your new image shows up in the list-tag digest
 cloud container images list-tags us.gcr.io/stem-type-navy/navy-stem-type
 ```
 
+Alternatively use the kubectl CLI
+```
+kubectl set image deployment/navy-stem-type navy-stem-type=gcr.io/stem-type-navy/navy-stem-type:v2
+```
+
 ## Migrate or Update Node Pool
 
 [link](https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool)
+
+## Reserve Static IP and Deploy via ingress to HTTPS endpoint
+[link](https://cloud.google.com/kubernetes-engine/docs/tutorials/configuring-domain-name-static-ip)

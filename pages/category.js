@@ -9,10 +9,13 @@ import TagsCloud from "../components/Sidebar/TagsCloud";
 import { postsByCategory, getTags } from "../utils/content";
 import { getCategoryLink } from "../utils/links";
 import PostsFeed from "../components/PostsFeed";
+import NextError from "next/error";
+import PostCategory from "../components/Post/PostCategory";
 import LanguageSelector from "../components/LanguageSelector";
 import LazyPostsFetcher from "./_hocs/LazyPostsFetcher";
 import Hr from "../components/Hr";
 import Layout from '../components/layout';
+import Config from "../utils/config";
 
 const Header = styled.div`
   text-align: center;
@@ -34,22 +37,26 @@ class CategoryPage extends React.Component {
   render() {
     const { category } = this.props.url.query;
     const { lang } = this.props;
+    if (!(category && Config.categories[category])) {
+      return <NextError statusCode={404} />;
+    }
     const posts = postsByCategory(this.props.posts, category);
     return (
       <Layout>  
         <Page lang={lang}>
           <CustomHead />
           <LogoBanner lang={lang} />
-          <Hr />
-          <div style={{ padding: 20 }}>
-          </div>
           <Grid style={{ overflow: "hidden" }}>
             <Row>
               <Col xs={12}>
-                <Header>
-                  <h2>Browsing by STEM Type</h2>
-                  <h1>{category}</h1>
-                </Header>
+              <Header>
+              <PostCategory
+                category={category}
+                categoryInfo={Config.categories[category]}
+              />
+              <div style={{ padding: 20 }}>
+              </div>
+            </Header>
               </Col>
             </Row>
             <Row>
