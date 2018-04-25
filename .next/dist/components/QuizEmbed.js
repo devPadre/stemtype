@@ -62,17 +62,18 @@ var QuizEmbed = function (_Component) {
       };
 
       var iframeStyle = {
+        overflow: "hidden",
         position: "relative",
         width: "100%",
         height: "100%",
         border: "none"
       };
-
       var gizmoID = "4283433";
       var surveyID = "STEM-Type-Quiz";
-      var gizmoUrl = "https://www.surveygizmo.com/s3/" + gizmoID + '/' + surveyID;
+      var entityID = "b4a817801ddce995970b2446b681ecdf";
+      var gizmoUrl = "https://www.surveygizmo.com/s3/" + gizmoID + '/' + surveyID + '?entity_id=' + entityID;
 
-      return _react2.default.createElement("div", { className: "QuizEmbed" }, _react2.default.createElement("div", { className: "gizmo_target", "data-rid-id": gizmoID, "data-fg": "#252525", "data-bg": "#EDEDED", style: divStyle, "data-auto-scroll": "true" }, _react2.default.createElement("iframe", { title: "stem-type", style: iframeStyle, src: gizmoUrl, sandbox: "allow-top-navigation allow-scripts allow-forms allow-popups allow-same-origin" })));
+      return _react2.default.createElement("div", { className: "QuizEmbed" }, _react2.default.createElement("div", { className: "gizmo_target", "data-rid-id": gizmoID, "data-fg": "#252525", "data-bg": "#EDEDED", style: divStyle, "data-auto-scroll": "true" }, _react2.default.createElement("iframe", { title: "stem-type", style: iframeStyle, src: gizmoUrl, sandbox: "allow-top-navigation allow-scripts allow-forms allow-same-origin allow-popups" })));
     }
   }]);
 

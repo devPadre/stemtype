@@ -22,20 +22,21 @@ class QuizEmbed extends Component {
         };
  
     const iframeStyle = {
+          overflow: "hidden",
           position: "relative",
           width: "100%",
           height: "100%",
           border: "none"
         };
- 
     const gizmoID = "4283433";
     const surveyID = "STEM-Type-Quiz";
-    const gizmoUrl = "https://www.surveygizmo.com/s3/" + gizmoID + '/' + surveyID ;
+    const entityID = "b4a817801ddce995970b2446b681ecdf";
+    const gizmoUrl = "https://www.surveygizmo.com/s3/" + gizmoID + '/' + surveyID + '?entity_id=' + entityID;
  
     return (
       <div className="QuizEmbed">
         <div className="gizmo_target" data-rid-id={gizmoID} data-fg="#252525" data-bg="#EDEDED" style={divStyle} data-auto-scroll="true">
-          <iframe title="stem-type" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms allow-popups allow-same-origin"></iframe>
+          <iframe title="stem-type" style={iframeStyle} src={gizmoUrl} sandbox="allow-top-navigation allow-scripts allow-forms allow-same-origin allow-popups"></iframe>
         </div>
       </div>
     );
